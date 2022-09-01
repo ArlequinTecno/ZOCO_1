@@ -2522,8 +2522,14 @@ drawable ic_launcher_foreground
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_menu_about_zoco
 drawable ic_menu_camera
+drawable ic_menu_category
 drawable ic_menu_gallery
+drawable ic_menu_index
+drawable ic_menu_my_products
+drawable ic_menu_notifications
+drawable ic_menu_settings
 drawable ic_menu_slideshow
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black

@@ -2521,8 +2521,14 @@ int drawable ic_launcher_foreground 0x7f070068
 int drawable ic_m3_chip_check 0x7f070069
 int drawable ic_m3_chip_checked_circle 0x7f07006a
 int drawable ic_m3_chip_close 0x7f07006b
+int drawable ic_menu_about_zoco 0x7f0700a1
 int drawable ic_menu_camera 0x7f07006c
+int drawable ic_menu_category 0x7f0700a2
 int drawable ic_menu_gallery 0x7f07006d
+int drawable ic_menu_index 0x7f0700a3
+int drawable ic_menu_my_products 0x7f0700a4
+int drawable ic_menu_notifications 0x7f0700a5
+int drawable ic_menu_settings 0x7f0700a6
 int drawable ic_menu_slideshow 0x7f07006e
 int drawable ic_mtrl_checked_circle 0x7f07006f
 int drawable ic_mtrl_chip_checked_black 0x7f070070
