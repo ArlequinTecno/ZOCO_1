@@ -21,6 +21,23 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ZOCO_1" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -42,10 +59,13 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="android-custom-viewC:/Users/migue/AppData/Local/Android/Sdk/sources/android-32/android/widget/TextView.java_SELECTED" value="TextView" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/arlequins/zoco_1/ui/menuDrawer/myProducts" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\java\com\arlequins\zoco_1\ui\menuDrawer\myProducts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\java\com\arlequins\zoco_1\ui\ui" />
     </key>
@@ -70,8 +90,8 @@
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ALL_USERS" value="false" />
-      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALL_USERS" value="true" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="true" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -137,7 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662037312749</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="menues main(drawer), tabIndex y tabMyProducts funcionales. falta poner los iconos.">
+      <created>1662067714745</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662067714745</updated>
+    </task>
+    <task id="LOCAL-00003" summary="navegación en drawer, y tab lista.">
+      <created>1662068728623</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662068728623</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +188,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="navegación menú drawer y menu tabIndex funcional desde main activity" />
-    <option name="LAST_COMMIT_MESSAGE" value="navegación menú drawer y menu tabIndex funcional desde main activity" />
+    <MESSAGE value="menues main(drawer), tabIndex y tabMyProducts funcionales. falta poner los iconos." />
+    <MESSAGE value="navegación en drawer, y tab lista." />
+    <option name="LAST_COMMIT_MESSAGE" value="navegación en drawer, y tab lista." />
   </component>
 </project>

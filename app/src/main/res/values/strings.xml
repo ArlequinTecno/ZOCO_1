@@ -19,4 +19,6 @@
     <string name="tab_foods">Comestibles</string>
     <string name="tab_services">Servicios</string>
     <string name="tab_discounts">Promociones</string>
+    <string name="tab_article">Mis artículos</string>
+    <string name="tab_store">Mis negocios</string>
 </resources>

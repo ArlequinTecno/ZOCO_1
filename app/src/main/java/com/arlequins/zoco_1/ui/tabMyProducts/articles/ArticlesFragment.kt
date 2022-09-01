@@ -6,27 +6,29 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.arlequins.zoco_1.R
+import android.widget.TextView
+import com.arlequins.zoco_1.databinding.FragmentArticlesBinding
 
 class ArticlesFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = ArticlesFragment()
-    }
-
-    private lateinit var viewModel: ArticlesViewModel
+    private var _binding: FragmentArticlesBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_articles, container, false)
-    }
+    ): View {
+        val articlesViewModel =
+            ViewModelProvider(this)[ArticlesViewModel::class.java]
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(ArticlesViewModel::class.java)
-        // TODO: Use the ViewModel
+        _binding = FragmentArticlesBinding.inflate(inflater, container, false)
+
+        val textView: TextView = binding.textArticles
+        articlesViewModel.text.observe(viewLifecycleOwner) {
+            textView.text = it
+        }
+        return binding.root
     }
 
 }

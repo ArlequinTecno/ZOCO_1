@@ -29,9 +29,11 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="tab_academics">Académicos</string>
     <string name="tab_all_products">Todos</string>
+    <string name="tab_article">Mis artículos</string>
     <string name="tab_discounts">Promociones</string>
     <string name="tab_foods">Comestibles</string>
     <string name="tab_services">Servicios</string>
+    <string name="tab_store">Mis negocios</string>
     <style name="Theme.ZOCO_1" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

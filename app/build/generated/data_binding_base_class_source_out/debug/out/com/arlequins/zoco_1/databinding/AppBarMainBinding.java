@@ -26,10 +26,13 @@ public final class AppBarMainBinding implements ViewBinding {
   public final FloatingActionButton fab;
 
   @NonNull
-  public final ViewPager indexViewPager;
+  public final ViewPager indexPager;
 
   @NonNull
   public final CoordinatorLayout mainCoordinator;
+
+  @NonNull
+  public final ViewPager myProductsPager;
 
   @NonNull
   public final TabLayout tabs;
@@ -41,13 +44,14 @@ public final class AppBarMainBinding implements ViewBinding {
   public final Toolbar toolbar;
 
   private AppBarMainBinding(@NonNull CoordinatorLayout rootView, @NonNull FloatingActionButton fab,
-      @NonNull ViewPager indexViewPager, @NonNull CoordinatorLayout mainCoordinator,
-      @NonNull TabLayout tabs, @NonNull ContentMainBinding toContentMain,
-      @NonNull Toolbar toolbar) {
+      @NonNull ViewPager indexPager, @NonNull CoordinatorLayout mainCoordinator,
+      @NonNull ViewPager myProductsPager, @NonNull TabLayout tabs,
+      @NonNull ContentMainBinding toContentMain, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.fab = fab;
-    this.indexViewPager = indexViewPager;
+    this.indexPager = indexPager;
     this.mainCoordinator = mainCoordinator;
+    this.myProductsPager = myProductsPager;
     this.tabs = tabs;
     this.toContentMain = toContentMain;
     this.toolbar = toolbar;
@@ -86,13 +90,19 @@ public final class AppBarMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.index_view_pager;
-      ViewPager indexViewPager = ViewBindings.findChildViewById(rootView, id);
-      if (indexViewPager == null) {
+      id = R.id.indexPager;
+      ViewPager indexPager = ViewBindings.findChildViewById(rootView, id);
+      if (indexPager == null) {
         break missingId;
       }
 
       CoordinatorLayout mainCoordinator = (CoordinatorLayout) rootView;
+
+      id = R.id.myProductsPager;
+      ViewPager myProductsPager = ViewBindings.findChildViewById(rootView, id);
+      if (myProductsPager == null) {
+        break missingId;
+      }
 
       id = R.id.tabs;
       TabLayout tabs = ViewBindings.findChildViewById(rootView, id);
@@ -113,8 +123,8 @@ public final class AppBarMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new AppBarMainBinding((CoordinatorLayout) rootView, fab, indexViewPager,
-          mainCoordinator, tabs, binding_toContentMain, toolbar);
+      return new AppBarMainBinding((CoordinatorLayout) rootView, fab, indexPager, mainCoordinator,
+          myProductsPager, tabs, binding_toContentMain, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -6,27 +6,29 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.arlequins.zoco_1.R
+import android.widget.TextView
+import com.arlequins.zoco_1.databinding.FragmentStoreBinding
 
 class StoreFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = StoreFragment()
-    }
-
-    private lateinit var viewModel: StoreViewModel
+    private var _binding: FragmentStoreBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_store, container, false)
-    }
+    ): View {
+        val storeViewModel =
+            ViewModelProvider(this)[StoreViewModel::class.java]
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(StoreViewModel::class.java)
-        // TODO: Use the ViewModel
+        _binding = FragmentStoreBinding.inflate(inflater, container, false)
+
+        val textView: TextView = binding.textStore
+        storeViewModel.text.observe(viewLifecycleOwner) {
+            textView.text = it
+        }
+        return binding.root
     }
 
 }
