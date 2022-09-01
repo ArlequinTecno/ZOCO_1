@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_index">
+
+    <fragment
+        android:id="@+id/nav_index"
+        android:name="com.arlequins.zoco_1.ui.menuDrawer.index.IndexFragment"
+        android:label="@string/menu_index"
+        tools:layout="@layout/fragment_index" />
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.arlequins.zoco_1.ui.menuDrawer.category.CategoryFragment"
+        android:label="@string/menu_category"
+        tools:layout="@layout/fragment_category" />
+
+    <fragment
+        android:id="@+id/nav_my_products"
+        android:name="com.arlequins.zoco_1.ui.menuDrawer.myProducts.MyProductsFragment"
+        android:label="@string/menu_my_products"
+        tools:layout="@layout/fragment_my_products" />
+    <fragment
+        android:id="@+id/nav_about_zoco"
+        android:name="com.arlequins.zoco_1.ui.menuDrawer.aboutZoco.AboutZocoFragment"
+        android:label="@string/menu_about_zoco"
+        tools:layout="@layout/fragment_about_zoco" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.arlequins.zoco_1.ui.menuDrawer.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.arlequins.zoco_1.ui.menuDrawer.notifications.NotificationsFragment"
+        android:label="@string/menu_notifications"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>

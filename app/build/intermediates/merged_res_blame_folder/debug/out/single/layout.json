@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\content_main.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\fragment_my_products.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_my_products.xml"
+    },
+    {
+        "merged": "com.arlequins.zoco_1.app-mergeDebugResources-47:/layout/fragment_settings.xml",
+        "source": "com.arlequins.zoco_1.app-main-50:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\fragment_discount.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_discount.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\fragment_notifications.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_notifications.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\fragment_academics.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_academics.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\app_bar_main.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\fragment_services.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_services.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\fragment_about_zoco.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_about_zoco.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\fragment_all_products.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_all_products.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\fragment_category.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\fragment_foods.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_foods.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\fragment_index.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_index.xml"
+    },
+    {
+        "merged": "com.arlequins.zoco_1.app-mergeDebugResources-47:/layout/fragment_foods.xml",
+        "source": "com.arlequins.zoco_1.app-main-50:/layout/fragment_foods.xml"
+    },
+    {
+        "merged": "com.arlequins.zoco_1.app-mergeDebugResources-47:/layout/fragment_services.xml",
+        "source": "com.arlequins.zoco_1.app-main-50:/layout/fragment_services.xml"
+    },
+    {
+        "merged": "com.arlequins.zoco_1.app-mergeDebugResources-47:/layout/fragment_discount.xml",
+        "source": "com.arlequins.zoco_1.app-main-50:/layout/fragment_discount.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-47:\\layout\\nav_header_main.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\nav_header_main.xml"
+    }
+]
