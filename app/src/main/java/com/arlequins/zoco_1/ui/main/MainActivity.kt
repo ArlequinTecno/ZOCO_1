@@ -12,13 +12,12 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.viewpager.widget.ViewPager
-import androidx.viewpager2.widget.ViewPager2
 import com.arlequins.zoco_1.R
 import com.arlequins.zoco_1.databinding.ActivityMainBinding
+import com.arlequins.zoco_1.ui.menuDrawer.index.IndexPagerAdapter
+import com.arlequins.zoco_1.ui.menuDrawer.myProducts.MyProductsPagerAdapter
 
-import com.arlequins.zoco_1.ui.menuDrawer.index.SectionsPagerAdapter
 
 import com.google.android.material.tabs.TabLayout
 
@@ -45,20 +44,35 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
 
         //menu tabs
-        val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
-        val viewPager: ViewPager = binding.appBarMain.indexViewPager
-        viewPager.adapter = sectionsPagerAdapter
+        val indexPagerAdapter = IndexPagerAdapter(this, supportFragmentManager)
+        val myProductsPagerAdapter = MyProductsPagerAdapter(this, supportFragmentManager)
+        val indexViewPager: ViewPager = binding.appBarMain.indexPager
+        val myProductsViewPager: ViewPager = binding.appBarMain.myProductsPager
         val tabs: TabLayout = binding.appBarMain.tabs
-        tabs.setupWithViewPager(viewPager)
+        indexViewPager.adapter = indexPagerAdapter
+        myProductsViewPager.adapter = myProductsPagerAdapter
+
+
 
         navController.addOnDestinationChangedListener{_, destination, _ ->
-            if (destination.id == R.id.nav_index){
-                tabs.visibility = View.VISIBLE
-                viewPager.visibility = View.VISIBLE
-            }
-            else{
-                tabs.visibility = View.GONE
-                viewPager.visibility = View.GONE
+            when (destination.id){
+                R.id.nav_index -> {
+                    myProductsViewPager.visibility = View.GONE
+                    tabs.setupWithViewPager(indexViewPager)
+                    tabs.visibility = View.VISIBLE
+                    indexViewPager.visibility = View.VISIBLE
+                }
+                R.id.nav_my_products -> {
+                    indexViewPager.visibility = View.GONE
+                    tabs.setupWithViewPager(myProductsViewPager)
+                    tabs.visibility = View.VISIBLE
+                    myProductsViewPager.visibility = View.VISIBLE
+                }
+                else -> {
+                    tabs.visibility = View.GONE
+                    indexViewPager.visibility = View.GONE
+                    myProductsViewPager.visibility = View.GONE
+                }
             }
         }
 

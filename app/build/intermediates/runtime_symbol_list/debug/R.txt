@@ -2810,7 +2810,7 @@ int id image 0x7f0800e8
 int id imageView 0x7f0800e9
 int id immediateStop 0x7f0800ea
 int id included 0x7f0800eb
-int id index_view_pager 0x7f080208
+int id indexPager 0x7f080214
 int id info 0x7f0800ed
 int id invisible 0x7f0800ee
 int id inward 0x7f0800ef
@@ -2890,6 +2890,7 @@ int id mtrl_picker_text_input_range_start 0x7f080138
 int id mtrl_picker_title_text 0x7f080139
 int id mtrl_view_tag_bottom_padding 0x7f08013a
 int id multiply 0x7f08013b
+int id myProductsPager 0x7f080215
 int id nav_about_zoco 0x7f08013c
 int id nav_category 0x7f08013d
 int id nav_controller_view_tag 0x7f08013e
@@ -3044,6 +3045,7 @@ int id textTop 0x7f0801d2
 int id textView 0x7f0801d3
 int id text_academics 0x7f08020c
 int id text_all_products 0x7f08020b
+int id text_articles 0x7f080212
 int id text_discount 0x7f08020d
 int id text_foods 0x7f08020e
 int id text_gallery 0x7f0801d4
@@ -3053,6 +3055,7 @@ int id text_input_start_icon 0x7f0801d7
 int id text_services 0x7f08020f
 int id text_settings 0x7f080210
 int id text_slideshow 0x7f0801d8
+int id text_store 0x7f080213
 int id textinput_counter 0x7f0801d9
 int id textinput_error 0x7f0801da
 int id textinput_helper_text 0x7f0801db
@@ -3215,6 +3218,7 @@ int layout design_text_input_start_icon 0x7f0b002e
 int layout fragment_about_zoco 0x7f0b002f
 int layout fragment_academics 0x7f0b0030
 int layout fragment_all_products 0x7f0b0031
+int layout fragment_articles 0x7f0b008e
 int layout fragment_category 0x7f0b0032
 int layout fragment_discount 0x7f0b0033
 int layout fragment_foods 0x7f0b0034
@@ -3223,6 +3227,7 @@ int layout fragment_my_products 0x7f0b0036
 int layout fragment_notifications 0x7f0b0037
 int layout fragment_services 0x7f0b0038
 int layout fragment_settings 0x7f0b0039
+int layout fragment_store 0x7f0b008f
 int layout m3_alert_dialog 0x7f0b003a
 int layout m3_alert_dialog_actions 0x7f0b003b
 int layout m3_alert_dialog_title 0x7f0b003c
@@ -3452,9 +3457,11 @@ int string search_menu_title 0x7f100087
 int string status_bar_notification_info_overflow 0x7f100088
 int string tab_academics 0x7f100089
 int string tab_all_products 0x7f10008a
+int string tab_article 0x7f10008e
 int string tab_discounts 0x7f10008b
 int string tab_foods 0x7f10008c
 int string tab_services 0x7f10008d
+int string tab_store 0x7f10008f
 int style AlertDialog_AppCompat 0x7f110000
 int style AlertDialog_AppCompat_Light 0x7f110001
 int style AndroidThemeColorAccentYellow 0x7f110002

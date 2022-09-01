@@ -2811,7 +2811,7 @@ id image
 id imageView
 id immediateStop
 id included
-id index_view_pager
+id indexPager
 id info
 id invisible
 id inward
@@ -2891,6 +2891,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id myProductsPager
 id nav_about_zoco
 id nav_category
 id nav_controller_view_tag
@@ -3045,6 +3046,7 @@ id textTop
 id textView
 id text_academics
 id text_all_products
+id text_articles
 id text_discount
 id text_foods
 id text_gallery
@@ -3054,6 +3056,7 @@ id text_input_start_icon
 id text_services
 id text_settings
 id text_slideshow
+id text_store
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -3216,6 +3219,7 @@ layout design_text_input_start_icon
 layout fragment_about_zoco
 layout fragment_academics
 layout fragment_all_products
+layout fragment_articles
 layout fragment_category
 layout fragment_discount
 layout fragment_foods
@@ -3224,6 +3228,7 @@ layout fragment_my_products
 layout fragment_notifications
 layout fragment_services
 layout fragment_settings
+layout fragment_store
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3453,9 +3458,11 @@ string search_menu_title
 string status_bar_notification_info_overflow
 string tab_academics
 string tab_all_products
+string tab_article
 string tab_discounts
 string tab_foods
 string tab_services
+string tab_store
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

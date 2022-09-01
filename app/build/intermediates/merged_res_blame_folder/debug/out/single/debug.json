@@ -8,6 +8,10 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\layout_fragment_articles.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_articles.xml"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\layout_fragment_my_products.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_my_products.xml"
     },
@@ -16,12 +20,12 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\layout_fragment_notifications.xml.flat",
-        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_notifications.xml"
-    },
-    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\layout_fragment_about_zoco.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_about_zoco.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\layout_fragment_notifications.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_notifications.xml"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -52,10 +56,6 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_foods.xml"
     },
     {
-        "merged": "com.arlequins.zoco_1.app-merged_res-48:/layout_fragment_settings.xml.flat",
-        "source": "com.arlequins.zoco_1.app-main-50:/layout/fragment_settings.xml"
-    },
-    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\xml\\backup_rules.xml"
     },
@@ -84,6 +84,10 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_settings.xml"
     },
     {
+        "merged": "com.arlequins.zoco_1.app-merged_res-48:/layout_app_bar_main.xml.flat",
+        "source": "com.arlequins.zoco_1.app-main-50:/layout/app_bar_main.xml"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\drawable_side_nav_bar.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\drawable\\side_nav_bar.xml"
     },
@@ -108,12 +112,16 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\menu\\activity_main_drawer.xml"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\layout_fragment_store.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_store.xml"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -124,16 +132,8 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\navigation\\mobile_navigation.xml"
     },
     {
-        "merged": "com.arlequins.zoco_1.app-merged_res-48:/layout_fragment_services.xml.flat",
-        "source": "com.arlequins.zoco_1.app-main-50:/layout/fragment_services.xml"
-    },
-    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\layout_fragment_academics.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\layout\\fragment_academics.xml"
-    },
-    {
-        "merged": "com.arlequins.zoco_1.app-merged_res-48:/layout_fragment_discount.xml.flat",
-        "source": "com.arlequins.zoco_1.app-main-50:/layout/fragment_discount.xml"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\mipmap-mdpi_ic_launcher.webp.flat",
@@ -152,19 +152,15 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.arlequins.zoco_1.app-merged_res-48:/layout_fragment_foods.xml.flat",
-        "source": "com.arlequins.zoco_1.app-main-50:/layout/fragment_foods.xml"
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-50:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     }
 ]

@@ -12,7 +12,7 @@ import com.arlequins.zoco_1.ui.tabsIndex.foods.FoodsFragment
 import com.arlequins.zoco_1.ui.tabsIndex.services.ServicesFragment
 
 
-private val TAB_TITLES = arrayOf(
+private val TAB_INDEX_TITLES = arrayOf(
     R.string.tab_all_products,
     R.string.tab_academics,
     R.string.tab_foods,
@@ -20,7 +20,7 @@ private val TAB_TITLES = arrayOf(
     R.string.tab_discounts
 )
 
-class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
+class IndexPagerAdapter(private val context: Context, fm: FragmentManager) :
     FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment {
@@ -34,7 +34,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
     }
 
     override fun getPageTitle(position: Int): CharSequence? {
-        return context.resources.getString(TAB_TITLES[position])
+        return context.resources.getString(TAB_INDEX_TITLES[position])
     }
 
     override fun getCount(): Int {

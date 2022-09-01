@@ -35,7 +35,17 @@
         layout="@layout/content_main" />
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/index_view_pager"
+        android:id="@+id/indexPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/myProductsPager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
