@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="array_categories">
+        <item>Categorias</item>
+        <item>Académicos</item>
+        <item>Alimentos</item>
+        <item>Servicios</item>
+    </string-array>
+    <string-array name="array_stores">
+        <item>...</item>
+        <item>sin tienda</item>
+    </string-array>
     <array name="com_google_android_gms_fonts_certs">
         <item>@array/com_google_android_gms_fonts_certs_dev</item>
         <item>@array/com_google_android_gms_fonts_certs_prod</item>
@@ -22,9 +32,10 @@
     <color name="accent">#8BC34A</color>
     <color name="black">#FF000000</color>
     <color name="divider">#BDBDBD</color>
+    <color name="focusable_color">#C9A5A7A6</color>
     <color name="ic_launcher_background">#D9EAE0</color>
     <color name="ic_launcher_zoco_background">#CAF8E1</color>
-    <color name="icons">#FFFFFF</color>
+    <color name="icons">#E6E4E8E4</color>
     <color name="primary">#007857</color>
     <color name="primary_background">#BDE6DB</color>
     <color name="primary_dark">#004a2d</color>
@@ -41,6 +52,8 @@
     <color name="text_h3">#409247</color>
     <color name="text_h3b">#E1363C36</color>
     <color name="text_h4">#61C165</color>
+    <color name="transparency">#00FFFFFF</color>
+    <color name="warning_color">#DDEC7821</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
@@ -51,17 +64,60 @@
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <string name="action_settings">Settings</string>
     <string name="app_name">ZOCO</string>
+    <string name="button_add">Agregar</string>
+    <string name="button_login">Iniciar sesión</string>
+    <string name="button_new_article">Agregar un artículo</string>
+    <string name="button_new_store">Agregar un negocio</string>
+    <string name="button_save">Guardar</string>
+    <string name="button_signup">Registarse</string>
+    <string name="chip_language_english">English</string>
+    <string name="chip_language_spanish">Español</string>
+    <string name="chip_mode_light">Modo claro</string>
+    <string name="chip_mode_night">Modo oscuro</string>
+    <string name="chip_state_product_no_publish">No publicar</string>
+    <string name="chip_state_product_publish">Publicar</string>
+    <string name="chip_state_store_hide">Ocultar</string>
+    <string name="chip_state_store_visibility">Visible</string>
+    <string name="default_web_client_id" translatable="false">415534912140-m8rb1korqnnlch2rkq51kbo1i51b00cg.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">415534912140</string>
+    <string name="google_api_key" translatable="false">AIzaSyD4n21PzXgaHBeHl4FexDWhPZViqcqaTMU</string>
+    <string name="google_app_id" translatable="false">1:415534912140:android:d24d22eea886feecf121a9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD4n21PzXgaHBeHl4FexDWhPZViqcqaTMU</string>
+    <string name="google_storage_bucket" translatable="false">zoco-da0c7.appspot.com</string>
+    <string name="hint_category">Categorias</string>
+    <string name="hint_description_category">Descripción de la categoría</string>
+    <string name="hint_description_product">Descripción del producto</string>
+    <string name="hint_description_store">Descripción del negocio</string>
+    <string name="hint_email">Correo electrónico Institucional</string>
+    <string name="hint_last_name">Apellidos</string>
+    <string name="hint_location_store">Ubicación del negocio</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_name_category">Nombre de la categoría</string>
+    <string name="hint_name_product">Nombre del producto</string>
+    <string name="hint_name_store">Nombre del negocio</string>
+    <string name="hint_passwd">Contraseña</string>
+    <string name="hint_phone">Celular</string>
+    <string name="hint_price_product">Precio del producto</string>
+    <string name="hint_repasswd">Repetir contraseña</string>
+    <string name="hint_store">Mis negocios</string>
     <string name="menu_about_zoco">Acerca de zoco</string>
     <string name="menu_category">Categorias</string>
     <string name="menu_index">Inicio</string>
+    <string name="menu_log_out">Cerrar sesión</string>
     <string name="menu_my_products">Mis productos</string>
     <string name="menu_notifications">Notificaciones</string>
+    <string name="menu_search">Buscar</string>
     <string name="menu_settings">Configuraciones</string>
+    <string name="menu_signOut">Cerrar sesión</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="project_id" translatable="false">zoco-da0c7</string>
+    <string name="register_new_article">Agregar un producto</string>
+    <string name="register_new_category_fragment">Agregar categoría</string>
+    <string name="register_new_store">Agregar un negocio</string>
     <string name="tab_academics">Académicos</string>
     <string name="tab_all_products">Todos</string>
     <string name="tab_article">Mis artículos</string>
@@ -69,6 +125,15 @@
     <string name="tab_foods">Comestibles</string>
     <string name="tab_services">Servicios</string>
     <string name="tab_store">Mis negocios</string>
+    <string name="text_ask_aunt">¿No tienes cuenta?</string>
+    <string name="text_change_passwd"><u>Cambiar contraseña</u></string>
+    <string name="text_email_domain"><u>@udea.edu.co</u></string>
+    <string name="text_forgot_password"><u>Recuperar contraseña</u></string>
+    <string name="text_signup_here"><u>Registrate aquí</u></string>
+    <string name="text_wellcome_msg">Bienvenido a ZOCO</string>
+    <string name="title_login_fragment">INICIAR SESIÓN</string>
+    <string name="title_signup_fragment">REGISTRARSE</string>
+    <string name="todo">TODO</string>
     <style name="Theme.ZOCO_1" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/primary</item>
@@ -81,12 +146,13 @@
         
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
         
-        <item name="android:fontFamily">@font/comfortaa</item>
+        
     </style>
     <style name="Theme.ZOCO_1.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="Theme.ZOCO_1.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">@font/comfortaa</item>
     </style>
     <style name="Theme.ZOCO_1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="Theme.ZOCO_1.starting" parent="Theme.SplashScreen">
@@ -94,5 +160,24 @@
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
         <item name="windowSplashScreenAnimationDuration">1500</item>
         <item name="postSplashScreenTheme">@style/Theme.ZOCO_1.NoActionBar</item>
+    </style>
+    <style name="TitleTextView">
+        <item name="android:fontFamily">@fonts/comfortaa_bold</item>
+        <item name="android:textColor">@color/primary_dark</item>
+    </style>
+    <style name="h1" parent="TitleTextView">
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="h2" parent="TitleTextView">
+        <item name="android:textSize">25sp</item>
+    </style>
+    <style name="h3" parent="TitleTextView">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="h4" parent="TitleTextView">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="h5" parent="TitleTextView">
+        <item name="android:textSize">16sp</item>
     </style>
 </resources>

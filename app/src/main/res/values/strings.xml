@@ -21,4 +21,70 @@
     <string name="tab_discounts">Promociones</string>
     <string name="tab_article">Mis artículos</string>
     <string name="tab_store">Mis negocios</string>
+
+
+    <string name="hint_name">Nombre</string>
+    <string name="hint_last_name">Apellidos</string>
+    <string name="hint_email">Correo electrónico Institucional</string>
+    <string name="hint_phone">Celular</string>
+    <string name="hint_passwd">Contraseña</string>
+    <string name="hint_repasswd">Repetir contraseña</string>
+    <string name="hint_name_product">Nombre del producto</string>
+    <string name="hint_price_product">Precio del producto</string>
+    <string name="hint_description_product">Descripción del producto</string>
+    <string name="hint_name_store">Nombre del negocio</string>
+    <string name="hint_description_store">Descripción del negocio</string>
+    <string name="hint_location_store">Ubicación del negocio</string>
+    <string name="hint_category">Categorias</string>
+    <string name="hint_store">Mis negocios</string>
+    <string name="hint_name_category">Nombre de la categoría</string>
+    <string name="hint_description_category">Descripción de la categoría</string>
+
+    <string name="chip_mode_light">Modo claro</string>
+    <string name="chip_mode_night">Modo oscuro</string>
+    <string name="chip_language_spanish">Español</string>
+    <string name="chip_language_english">English</string>
+    <string name="chip_state_product_publish">Publicar</string>
+    <string name="chip_state_product_no_publish">No publicar</string>
+    <string name="chip_state_store_visibility">Visible</string>
+    <string name="chip_state_store_hide">Ocultar</string>
+
+    <string name="button_save">Guardar</string>
+    <string name="button_add">Agregar</string>
+    <string name="button_login">Iniciar sesión</string>
+    <string name="button_signup">Registarse</string>
+    <string name="button_new_article">Agregar un artículo</string>
+    <string name="button_new_store">Agregar un negocio</string>
+
+    <string name="title_login_fragment">INICIAR SESIÓN</string>
+    <string name="title_signup_fragment">REGISTRARSE</string>
+
+    <string name="register_new_article">Agregar un producto</string>
+    <string name="register_new_store">Agregar un negocio</string>
+    <string name="register_new_category_fragment">Agregar categoría</string>
+
+    <string name="text_forgot_password"><u>Recuperar contraseña</u></string>
+    <string name="text_change_passwd"><u>Cambiar contraseña</u></string>
+    <string name="text_wellcome_msg">Bienvenido a ZOCO</string>
+    <string name="text_ask_aunt">¿No tienes cuenta?</string>
+    <string name="text_signup_here"><u>Registrate aquí</u></string>
+    <string name="text_email_domain"><u>@udea.edu.co</u></string>
+
+
+    <string name="todo">TODO</string>
+    <string name="menu_search">Buscar</string>
+    <string name="menu_signOut">Cerrar sesión</string>
+    <string name="menu_log_out">Cerrar sesión</string>
+
+
+    <string-array name="array_categories">
+        <item>Categorias</item>
+        <item>Académicos</item>
+        <item>Alimentos</item>
+        <item>Servicios</item>
+    </string-array>
+    <string-array name="array_stores">
+        <item>...</item>
+        <item>sin tienda</item>
+    </string-array>
 </resources>

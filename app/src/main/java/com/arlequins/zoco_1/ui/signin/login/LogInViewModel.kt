@@ -1,4 +1,4 @@
-package com.arlequins.zoco_1.ui.login
+package com.arlequins.zoco_1.ui.signin.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

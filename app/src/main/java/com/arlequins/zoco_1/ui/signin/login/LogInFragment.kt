@@ -1,4 +1,4 @@
-package com.arlequins.zoco_1.ui.login
+package com.arlequins.zoco_1.ui.signin.login
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -13,17 +13,17 @@ import com.arlequins.zoco_1.databinding.FragmentLogInBinding
 
 
 class LogInFragment : Fragment() {
-    private var _binding: FragmentLogInBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var logInBinding: FragmentLogInBinding
+    private lateinit var logInViewModel: LogInViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View{
 
-        val logInViewModel = ViewModelProvider(this)[LogInViewModel::class.java]
+        logInViewModel = ViewModelProvider(this)[LogInViewModel::class.java]
 
-        _binding = FragmentLogInBinding.inflate(inflater, container, false)
+        logInBinding = FragmentLogInBinding.inflate(inflater, container, false)
 
         logInViewModel.errorMsg.observe(viewLifecycleOwner){ msg ->
             showErrorMessage(msg)
@@ -31,7 +31,7 @@ class LogInFragment : Fragment() {
         logInViewModel.logInSuccess.observe(viewLifecycleOwner){
             goToIndex()
         }
-        with(binding){
+        with(logInBinding){
             loginButton.setOnClickListener {
                 logInViewModel.validateFields(
                     loginEmailInputText.text.toString(),
@@ -44,7 +44,7 @@ class LogInFragment : Fragment() {
         }
 
 
-        return binding.root
+        return logInBinding.root
     }
 
     private fun showErrorMessage(msg: String?) {

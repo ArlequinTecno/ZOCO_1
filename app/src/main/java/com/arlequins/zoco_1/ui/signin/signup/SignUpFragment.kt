@@ -1,4 +1,4 @@
-package com.arlequins.zoco_1.ui.signup
+package com.arlequins.zoco_1.ui.signin.signup
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -13,17 +13,17 @@ import com.arlequins.zoco_1.databinding.FragmentSignUpBinding
 
 
 class SignUpFragment : Fragment() {
-    private var _binding: FragmentSignUpBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var signUpBinding: FragmentSignUpBinding
+    private lateinit var signUpViewModel: SignUpViewModel
 
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val signUpViewModel = ViewModelProvider(this)[SignUpViewModel::class.java]
-
-        _binding = FragmentSignUpBinding.inflate(inflater, container, false)
+        signUpViewModel = ViewModelProvider(this)[SignUpViewModel::class.java]
+        signUpBinding = FragmentSignUpBinding.inflate(inflater, container, false)
 
         signUpViewModel.errorMsg.observe(viewLifecycleOwner){ msg: String? ->
             showErrorMessage(msg)
@@ -32,7 +32,7 @@ class SignUpFragment : Fragment() {
             goToLogin()
         }
 
-        with (binding){
+        with (signUpBinding){
             signupRegisterButton.setOnClickListener {
                 signUpViewModel.validateFields(
                     signupNameEditText.text.toString(),
@@ -44,7 +44,7 @@ class SignUpFragment : Fragment() {
             }
         }
 
-        return binding.root
+        return signUpBinding.root
     }
     override fun onResume() {
         super.onResume()

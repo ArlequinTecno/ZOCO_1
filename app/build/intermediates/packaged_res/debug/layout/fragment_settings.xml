@@ -1,19 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.menuDrawer.settings.SettingsFragment" >
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_settings"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        tools:context=".ui.menuDrawer.settings.SettingsFragment" >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/settings_name_text_input_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_profile_picture_image_view">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/settings_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_name"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/settings_email_text_input_layout"
+            style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_name_text_input_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/settings_email_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/settings_phone_text_input_layout"
+            style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_email_text_input_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/settings_phone_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_phone"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/lighting_mode_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:chipIcon="@drawable/ic_chip_light"
+            android:text="@string/chip_mode_light"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/settings_phone_text_input_layout"
+            app:layout_constraintTop_toBottomOf="@+id/settings_phone_text_input_layout" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/language_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/chip_language_spanish"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:chipIcon="@drawable/ic_chip_language"
+            app:layout_constraintBottom_toBottomOf="@+id/lighting_mode_chip"
+            app:layout_constraintStart_toEndOf="@+id/lighting_mode_chip"
+            app:layout_constraintTop_toBottomOf="@+id/settings_phone_text_input_layout" />
+
+        <TextView
+            android:id="@+id/change_passwd_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/text_change_passwd"
+            app:layout_constraintStart_toStartOf="@+id/lighting_mode_chip"
+            app:layout_constraintTop_toBottomOf="@+id/lighting_mode_chip" />
+
+        <Button
+            android:id="@+id/settings_save"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/button_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/change_passwd_text_view" />
+
+        <ImageView
+            android:id="@+id/settings_profile_picture_image_view"
+            android:layout_width="168dp"
+            android:layout_height="143dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/add_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_add_user" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "415534912140",
+    "project_id": "zoco-da0c7",
+    "storage_bucket": "zoco-da0c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415534912140:android:d24d22eea886feecf121a9",
+        "android_client_info": {
+          "package_name": "com.arlequins.zoco_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415534912140-m8rb1korqnnlch2rkq51kbo1i51b00cg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4n21PzXgaHBeHl4FexDWhPZViqcqaTMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "415534912140-m8rb1korqnnlch2rkq51kbo1i51b00cg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

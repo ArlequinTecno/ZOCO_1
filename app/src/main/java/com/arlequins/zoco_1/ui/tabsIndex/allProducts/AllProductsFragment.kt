@@ -6,31 +6,37 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import com.arlequins.zoco_1.R
 import com.arlequins.zoco_1.databinding.FragmentAllProductsBinding
+//import com.arlequins.zoco_1.model.Article
 
 
 class AllProductsFragment : Fragment() {
 
-    private var _binding: FragmentAllProductsBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var allProductsBinding: FragmentAllProductsBinding
+    private lateinit var allProductsViewModel: AllProductsViewModel
+    //private lateinit var articleAdapter: AllProductsAdapter
+    //private var articleList: ArrayList<Article> = ArrayList()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val allProductsViewModel =
-            ViewModelProvider(this)[AllProductsViewModel::class.java]
+        allProductsBinding = FragmentAllProductsBinding.inflate(inflater, container, false)
+        allProductsViewModel = ViewModelProvider(this)[AllProductsViewModel::class.java]
+/*
+        allProductsViewModel.loadArticles()
+        articleAdapter = AllProductsAdapter(articleList, onItemClicked ={onItemClicked(it)} )
 
-        _binding = FragmentAllProductsBinding.inflate(inflater, container, false)
-
-        val textView: TextView = binding.textAllProducts
-        allProductsViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        allProductsBinding.allProductsRecycleView.apply{
+            layoutManager = LinearLayoutManager(this@AllProductsFragment.requireContext())
+            adapter = articleAdapter
+            setHasFixedSize(false)
         }
-        return binding.root
+*/
+        return allProductsBinding.root
     }
+
+    //private fun onItemClicked(it: Article) {}
 
 }

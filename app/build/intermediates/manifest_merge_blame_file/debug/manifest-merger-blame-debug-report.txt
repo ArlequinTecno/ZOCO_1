@@ -10,91 +10,246 @@
 9        android:targetSdkVersion="32" />
 9-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:6:5-30:19
-12        android:allowBackup="true"
-12-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:7:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.8.0] C:\Users\migue\.gradle\caches\transforms-3\065dfa018132f0a621878cd66243e674\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
-14        android:dataExtractionRules="@xml/data_extraction_rules"
-14-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:8:9-65
-15        android:debuggable="true"
-16        android:fullBackupContent="@xml/backup_rules"
-16-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:9:9-54
-17        android:icon="@mipmap/ic_launcher"
-17-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:10:9-43
-18        android:label="@string/app_name"
-18-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:11:9-41
-19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:12:9-54
-20        android:supportsRtl="true"
-20-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:13:9-35
-21        android:testOnly="true"
-22        android:theme="@style/Theme.ZOCO_1" >
-22-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:14:9-44
-23        <activity
-23-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:16:9-26:20
-24            android:name="com.arlequins.zoco_1.ui.main.MainActivity"
-24-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:17:13-49
-25            android:exported="true"
-25-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:18:13-36
-26            android:label="@string/app_name"
-26-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:19:13-45
-27            android:theme="@style/Theme.ZOCO_1.starting" >
-27-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:20:13-57
-28            <intent-filter>
-28-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:21:13-25:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:22:17-69
-29-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:22:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:24:17-77
-31-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:24:27-74
-32            </intent-filter>
-33        </activity>
-34
-35        <meta-data
-35-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:27:9-29:57
-36            android:name="preloaded_fonts"
-36-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:28:13-43
-37            android:resource="@array/preloaded_fonts" />
-37-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:29:13-54
-38
-39        <uses-library
-39-->[androidx.window:window:1.0.0] C:\Users\migue\.gradle\caches\transforms-3\0f3eca9512f0eb9502afcb0282c13bf3\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-40            android:name="androidx.window.extensions"
-40-->[androidx.window:window:1.0.0] C:\Users\migue\.gradle\caches\transforms-3\0f3eca9512f0eb9502afcb0282c13bf3\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-41            android:required="false" />
-41-->[androidx.window:window:1.0.0] C:\Users\migue\.gradle\caches\transforms-3\0f3eca9512f0eb9502afcb0282c13bf3\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-42        <uses-library
-42-->[androidx.window:window:1.0.0] C:\Users\migue\.gradle\caches\transforms-3\0f3eca9512f0eb9502afcb0282c13bf3\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-43            android:name="androidx.window.sidecar"
-43-->[androidx.window:window:1.0.0] C:\Users\migue\.gradle\caches\transforms-3\0f3eca9512f0eb9502afcb0282c13bf3\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-44            android:required="false" />
-44-->[androidx.window:window:1.0.0] C:\Users\migue\.gradle\caches\transforms-3\0f3eca9512f0eb9502afcb0282c13bf3\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-45
-46        <provider
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-47            android:name="androidx.startup.InitializationProvider"
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-48            android:authorities="com.arlequins.zoco_1.androidx-startup"
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-49            android:exported="false" >
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-50            <meta-data
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-51                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-52                android:value="androidx.startup" />
-52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\4e331c747f82bfb46756f96d7fe9a59c\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-53            <meta-data
-53-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\migue\.gradle\caches\transforms-3\35943563f449e64621f791c783419b38\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\migue\.gradle\caches\transforms-3\35943563f449e64621f791c783419b38\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-55                android:value="androidx.startup" />
-55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\migue\.gradle\caches\transforms-3\35943563f449e64621f791c783419b38\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-56        </provider>
-57    </application>
-58
-59</manifest>
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:23:5-67
+11-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:23:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:24:5-79
+12-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:24:22-76
+13
+14    <application
+14-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:6:5-30:19
+15        android:allowBackup="true"
+15-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:7:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.8.0] C:\Users\migue\.gradle\caches\transforms-3\00fb3304374861a854d400287596c17b\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+17        android:dataExtractionRules="@xml/data_extraction_rules"
+17-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:8:9-65
+18        android:debuggable="true"
+19        android:fullBackupContent="@xml/backup_rules"
+19-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:9:9-54
+20        android:icon="@mipmap/ic_launcher"
+20-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:10:9-43
+21        android:label="@string/app_name"
+21-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:11:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:12:9-54
+23        android:supportsRtl="true"
+23-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:13:9-35
+24        android:testOnly="true"
+25        android:theme="@style/Theme.ZOCO_1" >
+25-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:14:9-44
+26        <activity
+26-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:16:9-26:20
+27            android:name="com.arlequins.zoco_1.ui.main.MainActivity"
+27-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:17:13-49
+28            android:exported="true"
+28-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:18:13-36
+29            android:label="@string/app_name"
+29-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:19:13-45
+30            android:theme="@style/Theme.ZOCO_1.starting" >
+30-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:20:13-57
+31            <intent-filter>
+31-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:21:13-25:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:22:17-69
+32-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:22:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:24:17-77
+34-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:24:27-74
+35            </intent-filter>
+36        </activity>
+37
+38        <meta-data
+38-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:27:9-29:57
+39            android:name="preloaded_fonts"
+39-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:28:13-43
+40            android:resource="@array/preloaded_fonts" />
+40-->C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\AndroidManifest.xml:29:13-54
+41
+42        <service
+42-->[com.google.firebase:firebase-auth-ktx:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\e398166540b794a006d39367c33ca61e\transformed\firebase-auth-ktx-21.0.8\AndroidManifest.xml:8:9-14:19
+43            android:name="com.google.firebase.components.ComponentDiscoveryService"
+43-->[com.google.firebase:firebase-auth-ktx:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\e398166540b794a006d39367c33ca61e\transformed\firebase-auth-ktx-21.0.8\AndroidManifest.xml:9:13-84
+44            android:directBootAware="true"
+44-->[com.google.firebase:firebase-common:20.1.2] C:\Users\migue\.gradle\caches\transforms-3\7bc7804a62827bee0e6dd865a5b07065\transformed\firebase-common-20.1.2\AndroidManifest.xml:35:13-43
+45            android:exported="false" >
+45-->[com.google.firebase:firebase-auth-ktx:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\e398166540b794a006d39367c33ca61e\transformed\firebase-auth-ktx-21.0.8\AndroidManifest.xml:10:13-37
+46            <meta-data
+46-->[com.google.firebase:firebase-auth-ktx:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\e398166540b794a006d39367c33ca61e\transformed\firebase-auth-ktx-21.0.8\AndroidManifest.xml:11:13-13:85
+47                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+47-->[com.google.firebase:firebase-auth-ktx:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\e398166540b794a006d39367c33ca61e\transformed\firebase-auth-ktx-21.0.8\AndroidManifest.xml:12:17-116
+48                android:value="com.google.firebase.components.ComponentRegistrar" />
+48-->[com.google.firebase:firebase-auth-ktx:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\e398166540b794a006d39367c33ca61e\transformed\firebase-auth-ktx-21.0.8\AndroidManifest.xml:13:17-82
+49            <meta-data
+49-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:67:13-69:85
+50                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+50-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:68:17-109
+51                android:value="com.google.firebase.components.ComponentRegistrar" />
+51-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:69:17-82
+52            <meta-data
+52-->[com.google.firebase:firebase-firestore-ktx:24.3.1] C:\Users\migue\.gradle\caches\transforms-3\766178cf8f7e85d9b30368ed5da3c144\transformed\firebase-firestore-ktx-24.3.1\AndroidManifest.xml:15:13-17:85
+53                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"
+53-->[com.google.firebase:firebase-firestore-ktx:24.3.1] C:\Users\migue\.gradle\caches\transforms-3\766178cf8f7e85d9b30368ed5da3c144\transformed\firebase-firestore-ktx-24.3.1\AndroidManifest.xml:16:17-126
+54                android:value="com.google.firebase.components.ComponentRegistrar" />
+54-->[com.google.firebase:firebase-firestore-ktx:24.3.1] C:\Users\migue\.gradle\caches\transforms-3\766178cf8f7e85d9b30368ed5da3c144\transformed\firebase-firestore-ktx-24.3.1\AndroidManifest.xml:17:17-82
+55            <meta-data
+55-->[com.google.firebase:firebase-firestore:24.3.1] C:\Users\migue\.gradle\caches\transforms-3\b354e5df751cad85f548038d9a4be610\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:20:13-22:85
+56                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+56-->[com.google.firebase:firebase-firestore:24.3.1] C:\Users\migue\.gradle\caches\transforms-3\b354e5df751cad85f548038d9a4be610\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:21:17-111
+57                android:value="com.google.firebase.components.ComponentRegistrar" />
+57-->[com.google.firebase:firebase-firestore:24.3.1] C:\Users\migue\.gradle\caches\transforms-3\b354e5df751cad85f548038d9a4be610\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:22:17-82
+58            <meta-data
+58-->[com.google.firebase:firebase-common-ktx:20.1.2] C:\Users\migue\.gradle\caches\transforms-3\b29f1d140d55644e46982f0122be80ad\transformed\firebase-common-ktx-20.1.2\AndroidManifest.xml:15:13-17:85
+59                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+59-->[com.google.firebase:firebase-common-ktx:20.1.2] C:\Users\migue\.gradle\caches\transforms-3\b29f1d140d55644e46982f0122be80ad\transformed\firebase-common-ktx-20.1.2\AndroidManifest.xml:16:17-113
+60                android:value="com.google.firebase.components.ComponentRegistrar" />
+60-->[com.google.firebase:firebase-common-ktx:20.1.2] C:\Users\migue\.gradle\caches\transforms-3\b29f1d140d55644e46982f0122be80ad\transformed\firebase-common-ktx-20.1.2\AndroidManifest.xml:17:17-82
+61        </service>
+62
+63        <activity
+63-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:27:9-44:20
+64            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+64-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:28:13-80
+65            android:excludeFromRecents="true"
+65-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:29:13-46
+66            android:exported="true"
+66-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:30:13-36
+67            android:launchMode="singleTask"
+67-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:31:13-44
+68            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+68-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:32:13-72
+69            <intent-filter>
+69-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:33:13-43:29
+70                <action android:name="android.intent.action.VIEW" />
+70-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:34:17-69
+70-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:34:25-66
+71
+72                <category android:name="android.intent.category.DEFAULT" />
+72-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:36:17-76
+72-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:36:27-73
+73                <category android:name="android.intent.category.BROWSABLE" />
+73-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:37:17-78
+73-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:37:27-75
+74
+75                <data
+75-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:39:17-42:51
+76                    android:host="firebase.auth"
+76-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:40:21-49
+77                    android:path="/"
+77-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:41:21-37
+78                    android:scheme="genericidp" />
+78-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:42:21-48
+79            </intent-filter>
+80        </activity>
+81        <activity
+81-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:45:9-62:20
+82            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+82-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:46:13-79
+83            android:excludeFromRecents="true"
+83-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:47:13-46
+84            android:exported="true"
+84-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:48:13-36
+85            android:launchMode="singleTask"
+85-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:49:13-44
+86            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+86-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:50:13-72
+87            <intent-filter>
+87-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:51:13-61:29
+88                <action android:name="android.intent.action.VIEW" />
+88-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:34:17-69
+88-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:34:25-66
+89
+90                <category android:name="android.intent.category.DEFAULT" />
+90-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:36:17-76
+90-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:36:27-73
+91                <category android:name="android.intent.category.BROWSABLE" />
+91-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:37:17-78
+91-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:37:27-75
+92
+93                <data
+93-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:39:17-42:51
+94                    android:host="firebase.auth"
+94-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:40:21-49
+95                    android:path="/"
+95-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:41:21-37
+96                    android:scheme="recaptcha" />
+96-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\migue\.gradle\caches\transforms-3\f55066827d6bc9cb74dfcc4d4392232f\transformed\firebase-auth-21.0.8\AndroidManifest.xml:42:21-48
+97            </intent-filter>
+98        </activity>
+99
+100        <provider
+100-->[com.google.firebase:firebase-common:20.1.2] C:\Users\migue\.gradle\caches\transforms-3\7bc7804a62827bee0e6dd865a5b07065\transformed\firebase-common-20.1.2\AndroidManifest.xml:26:9-31:39
+101            android:name="com.google.firebase.provider.FirebaseInitProvider"
+101-->[com.google.firebase:firebase-common:20.1.2] C:\Users\migue\.gradle\caches\transforms-3\7bc7804a62827bee0e6dd865a5b07065\transformed\firebase-common-20.1.2\AndroidManifest.xml:27:13-77
+102            android:authorities="com.arlequins.zoco_1.firebaseinitprovider"
+102-->[com.google.firebase:firebase-common:20.1.2] C:\Users\migue\.gradle\caches\transforms-3\7bc7804a62827bee0e6dd865a5b07065\transformed\firebase-common-20.1.2\AndroidManifest.xml:28:13-72
+103            android:directBootAware="true"
+103-->[com.google.firebase:firebase-common:20.1.2] C:\Users\migue\.gradle\caches\transforms-3\7bc7804a62827bee0e6dd865a5b07065\transformed\firebase-common-20.1.2\AndroidManifest.xml:29:13-43
+104            android:exported="false"
+104-->[com.google.firebase:firebase-common:20.1.2] C:\Users\migue\.gradle\caches\transforms-3\7bc7804a62827bee0e6dd865a5b07065\transformed\firebase-common-20.1.2\AndroidManifest.xml:30:13-37
+105            android:initOrder="100" />
+105-->[com.google.firebase:firebase-common:20.1.2] C:\Users\migue\.gradle\caches\transforms-3\7bc7804a62827bee0e6dd865a5b07065\transformed\firebase-common-20.1.2\AndroidManifest.xml:31:13-36
+106
+107        <activity
+107-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\migue\.gradle\caches\transforms-3\de288d20c2d2ddd553ae1b3c29f0df0e\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+108            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+108-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\migue\.gradle\caches\transforms-3\de288d20c2d2ddd553ae1b3c29f0df0e\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+109            android:exported="false"
+109-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\migue\.gradle\caches\transforms-3\de288d20c2d2ddd553ae1b3c29f0df0e\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+110            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+110-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\migue\.gradle\caches\transforms-3\de288d20c2d2ddd553ae1b3c29f0df0e\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+111
+112        <meta-data
+112-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\migue\.gradle\caches\transforms-3\f76089437b431b4313428adc4ac39ead\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+113            android:name="com.google.android.gms.version"
+113-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\migue\.gradle\caches\transforms-3\f76089437b431b4313428adc4ac39ead\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+114            android:value="@integer/google_play_services_version" />
+114-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\migue\.gradle\caches\transforms-3\f76089437b431b4313428adc4ac39ead\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+115
+116        <uses-library
+116-->[androidx.window:window:1.0.0] C:\Users\migue\.gradle\caches\transforms-3\26d3689d7fab27324377a5d5e3021afe\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+117            android:name="androidx.window.extensions"
+117-->[androidx.window:window:1.0.0] C:\Users\migue\.gradle\caches\transforms-3\26d3689d7fab27324377a5d5e3021afe\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+118            android:required="false" />
+118-->[androidx.window:window:1.0.0] C:\Users\migue\.gradle\caches\transforms-3\26d3689d7fab27324377a5d5e3021afe\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+119        <uses-library
+119-->[androidx.window:window:1.0.0] C:\Users\migue\.gradle\caches\transforms-3\26d3689d7fab27324377a5d5e3021afe\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+120            android:name="androidx.window.sidecar"
+120-->[androidx.window:window:1.0.0] C:\Users\migue\.gradle\caches\transforms-3\26d3689d7fab27324377a5d5e3021afe\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+121            android:required="false" />
+121-->[androidx.window:window:1.0.0] C:\Users\migue\.gradle\caches\transforms-3\26d3689d7fab27324377a5d5e3021afe\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+122
+123        <provider
+123-->[com.squareup.picasso:picasso:2.8] C:\Users\migue\.gradle\caches\transforms-3\b7b17f8bbd16149f132f1f050cbe90d9\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
+124            android:name="com.squareup.picasso.PicassoProvider"
+124-->[com.squareup.picasso:picasso:2.8] C:\Users\migue\.gradle\caches\transforms-3\b7b17f8bbd16149f132f1f050cbe90d9\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
+125            android:authorities="com.arlequins.zoco_1.com.squareup.picasso"
+125-->[com.squareup.picasso:picasso:2.8] C:\Users\migue\.gradle\caches\transforms-3\b7b17f8bbd16149f132f1f050cbe90d9\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
+126            android:exported="false" />
+126-->[com.squareup.picasso:picasso:2.8] C:\Users\migue\.gradle\caches\transforms-3\b7b17f8bbd16149f132f1f050cbe90d9\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
+127        <provider
+127-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\a4b08aeb0d4096f52028266c24f5199f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+128            android:name="androidx.startup.InitializationProvider"
+128-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\a4b08aeb0d4096f52028266c24f5199f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+129            android:authorities="com.arlequins.zoco_1.androidx-startup"
+129-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\a4b08aeb0d4096f52028266c24f5199f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+130            android:exported="false" >
+130-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\a4b08aeb0d4096f52028266c24f5199f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+131            <meta-data
+131-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\a4b08aeb0d4096f52028266c24f5199f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+132                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+132-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\a4b08aeb0d4096f52028266c24f5199f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+133                android:value="androidx.startup" />
+133-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\a4b08aeb0d4096f52028266c24f5199f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+134            <meta-data
+134-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\migue\.gradle\caches\transforms-3\c1ba0f8953b7f677f0a6a258435fa9c5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+135                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+135-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\migue\.gradle\caches\transforms-3\c1ba0f8953b7f677f0a6a258435fa9c5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+136                android:value="androidx.startup" />
+136-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\migue\.gradle\caches\transforms-3\c1ba0f8953b7f677f0a6a258435fa9c5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+137        </provider>
+138    </application>
+139
+140</manifest>

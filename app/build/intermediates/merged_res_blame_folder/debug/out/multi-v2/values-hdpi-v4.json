@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.arlequins.zoco_1.app-mergeDebugResources-47:/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "com.arlequins.zoco_1.app-mergeDebugResources-52:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\migue\\.gradle\\caches\\transforms-3\\68d9cc4d14cacbb2ac21672e240f5e53\\transformed\\appcompat-1.5.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\migue\\.gradle\\caches\\transforms-3\\11bf483fc8a98f4e28ba5580d20a283f\\transformed\\appcompat-1.5.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
