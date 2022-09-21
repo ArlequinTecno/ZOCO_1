@@ -6,16 +6,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.arlequins.zoco_1.R
+import android.widget.TextView
+import com.arlequins.zoco_1.databinding.FragmentAboutZocoBinding
 
 class AboutZocoFragment : Fragment() {
 
-    private lateinit var viewModel: AboutZocoViewModel
+    private var _binding: FragmentAboutZocoBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_about_zoco, container, false)
+    ): View {
+        val aboutZocoViewModel = ViewModelProvider(this)[AboutZocoViewModel::class.java]
+        _binding = FragmentAboutZocoBinding.inflate(inflater, container, false)
+
+        val textView: TextView = binding.textAboutZoco
+        aboutZocoViewModel.text.observe(viewLifecycleOwner){
+            textView.text = it
+        }
+        return binding.root
     }
 }

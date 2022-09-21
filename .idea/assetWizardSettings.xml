@@ -37,7 +37,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\migue\OneDrive\Documentos\proyectos de programación\móvil\prototipoApp\img\icons\settings.png" />
+                                                <entry key="imagePath" value="C:\Users\migue\OneDrive\Documentos\proyectos de programación\móvil\prototipoApp\img\icons\x-mark.png" />
                                                 <entry key="opacityPercent" value="60" />
                                                 <entry key="paddingPercent" value="5" />
                                               </map>
@@ -72,8 +72,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\migue\OneDrive\Documentos\proyectos de programación\móvil\prototipoApp\img\icons\settings.png" />
-                                      <entry key="outputName" value="ic_menu_settings" />
+                                      <entry key="imageAsset" value="C:\Users\migue\OneDrive\Documentos\proyectos de programación\móvil\prototipoApp\img\icons\x-mark.png" />
+                                      <entry key="outputName" value="ic_x_mark" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -101,6 +101,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="imagePath" value="C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\res\drawable\vector_zoco.xml" />
+                                                <entry key="scalingPercent" value="28" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -130,6 +132,11 @@
                                       </entry>
                                     </map>
                                   </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                    </map>
+                                  </option>
                                 </PersistentState>
                               </value>
                             </entry>
@@ -145,6 +152,19 @@
                                               <map>
                                                 <entry key="color" value="000000" />
                                                 <entry key="imagePath" value="C:\Users\migue\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                      <entry key="image">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="color" value="000000" />
+                                                <entry key="imagePath" value="C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\res\drawable\logo_zoco.xml" />
+                                                <entry key="paddingPercent" value="25" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -172,6 +192,14 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="backgroundColor" value="d0efd2" />
+                                      <entry key="iconShape" value="CIRCLE" />
+                                      <entry key="imageAsset" value="C:\Users\migue\AndroidStudioProjects\ZOCO_1\app\src\main\res\drawable\logo_zoco.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -301,6 +329,46 @@
                         <option name="values">
                           <map>
                             <entry key="outputIconType" value="ACTIONBAR" />
+                          </map>
+                        </option>
+                      </PersistentState>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </PersistentState>
+          </value>
+        </entry>
+        <entry key="vectorWizard">
+          <value>
+            <PersistentState>
+              <option name="children">
+                <map>
+                  <entry key="vectorAssetStep">
+                    <value>
+                      <PersistentState>
+                        <option name="children">
+                          <map>
+                            <entry key="clipartAsset">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/logout/baseline_logout_24.xml" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="autoMirrored" value="true" />
+                            <entry key="color" value="393b39" />
+                            <entry key="opacityPercent" value="90" />
+                            <entry key="outputName" value="ic_sign_out_black" />
+                            <entry key="sourceFile" value="C:\Users\migue\OneDrive\Documentos\proyectos de programación\móvil\prototipoApp\img\logo\logo_zoco.svg" />
                           </map>
                         </option>
                       </PersistentState>

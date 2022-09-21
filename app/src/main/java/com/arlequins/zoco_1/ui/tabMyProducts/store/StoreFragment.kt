@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
 import com.arlequins.zoco_1.databinding.FragmentStoreBinding
 
 class StoreFragment : Fragment() {
@@ -30,5 +31,11 @@ class StoreFragment : Fragment() {
         }
         return binding.root
     }
-
+    private fun goToStore(){
+        //TODO
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }
