@@ -44,12 +44,13 @@ class AllProductsAdapter(
                 priceArticleTextView.text = article.price
                 descriptionArticleTextView.text = article.description
 
-                if (article.urlPicture.isNullOrEmpty()){
+                /*if (article.urlPicture.isNullOrEmpty()){
                     Picasso.get().load(article.urlPicture).into(articleImageView)
-                }
+                }*/
             }
 
         }
     }
+
 
 }
