@@ -10,10 +10,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import androidx.viewpager.widget.ViewPager;
 import com.arlequins.zoco_1.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.tabs.TabLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,19 +20,7 @@ public final class AppBarMainBinding implements ViewBinding {
   private final CoordinatorLayout rootView;
 
   @NonNull
-  public final FloatingActionButton fab;
-
-  @NonNull
-  public final ViewPager indexPager;
-
-  @NonNull
   public final CoordinatorLayout mainCoordinator;
-
-  @NonNull
-  public final ViewPager myProductsPager;
-
-  @NonNull
-  public final TabLayout tabs;
 
   @NonNull
   public final ContentMainBinding toContentMain;
@@ -43,16 +28,11 @@ public final class AppBarMainBinding implements ViewBinding {
   @NonNull
   public final Toolbar toolbar;
 
-  private AppBarMainBinding(@NonNull CoordinatorLayout rootView, @NonNull FloatingActionButton fab,
-      @NonNull ViewPager indexPager, @NonNull CoordinatorLayout mainCoordinator,
-      @NonNull ViewPager myProductsPager, @NonNull TabLayout tabs,
-      @NonNull ContentMainBinding toContentMain, @NonNull Toolbar toolbar) {
+  private AppBarMainBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull CoordinatorLayout mainCoordinator, @NonNull ContentMainBinding toContentMain,
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.fab = fab;
-    this.indexPager = indexPager;
     this.mainCoordinator = mainCoordinator;
-    this.myProductsPager = myProductsPager;
-    this.tabs = tabs;
     this.toContentMain = toContentMain;
     this.toolbar = toolbar;
   }
@@ -84,31 +64,7 @@ public final class AppBarMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.fab;
-      FloatingActionButton fab = ViewBindings.findChildViewById(rootView, id);
-      if (fab == null) {
-        break missingId;
-      }
-
-      id = R.id.indexPager;
-      ViewPager indexPager = ViewBindings.findChildViewById(rootView, id);
-      if (indexPager == null) {
-        break missingId;
-      }
-
       CoordinatorLayout mainCoordinator = (CoordinatorLayout) rootView;
-
-      id = R.id.myProductsPager;
-      ViewPager myProductsPager = ViewBindings.findChildViewById(rootView, id);
-      if (myProductsPager == null) {
-        break missingId;
-      }
-
-      id = R.id.tabs;
-      TabLayout tabs = ViewBindings.findChildViewById(rootView, id);
-      if (tabs == null) {
-        break missingId;
-      }
 
       id = R.id.to_content_main;
       View toContentMain = ViewBindings.findChildViewById(rootView, id);
@@ -123,8 +79,8 @@ public final class AppBarMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new AppBarMainBinding((CoordinatorLayout) rootView, fab, indexPager, mainCoordinator,
-          myProductsPager, tabs, binding_toContentMain, toolbar);
+      return new AppBarMainBinding((CoordinatorLayout) rootView, mainCoordinator,
+          binding_toContentMain, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

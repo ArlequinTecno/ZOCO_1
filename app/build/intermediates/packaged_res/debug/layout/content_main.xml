@@ -19,5 +19,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
 
-    <!--<include layout="@layout/fragment_index"/>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 
 class ArticlesViewModel : ViewModel() {
     private val _text = MutableLiveData<String>().apply {
-        value = "This is article Fragment"
+        value = "No tienes artículos agregados"
     }
     val text: LiveData<String> = _text
 }

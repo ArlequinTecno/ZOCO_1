@@ -5,39 +5,43 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.arlequins.zoco_1.databinding.FragmentCategoryBinding
 
 
 class CategoryFragment : Fragment() {
 
-    private var _binding: FragmentCategoryBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
+    private lateinit var categoryBinding: FragmentCategoryBinding
+    private lateinit var categoryViewModel: CategoryViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val galleryViewModel =
-            ViewModelProvider(this)[CateoryViewModel::class.java]
+        categoryBinding = FragmentCategoryBinding.inflate(inflater, container, false)
+        categoryViewModel = ViewModelProvider(this)[CategoryViewModel::class.java]
 
-        _binding = FragmentCategoryBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        val textView: TextView = binding.textGallery
-        galleryViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = categoryBinding.textCategory
+        categoryViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
-        return root
-    }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+        with(categoryBinding){
+            addCategoryFab.setOnClickListener {
+                goToNewCategory()
+            }
+        }
+        return categoryBinding.root
+    }
+    private fun goToNewCategory(){
+        findNavController().navigate(CategoryFragmentDirections.actionNavCategoryToNavNewCategory())
+    }
+    override fun onResume() {
+        super.onResume()
+        (activity as AppCompatActivity).supportActionBar!!.show()
     }
 }

@@ -2,8 +2,10 @@ package com.arlequins.zoco_1.ui.main
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.view.View
-import com.google.android.material.snackbar.Snackbar
+import android.widget.TextView
+import android.widget.Toast
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -12,73 +14,45 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.viewpager.widget.ViewPager
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavController
 import com.arlequins.zoco_1.R
+import com.arlequins.zoco_1.R.id.nav_index
 import com.arlequins.zoco_1.databinding.ActivityMainBinding
-import com.arlequins.zoco_1.ui.menuDrawer.index.IndexPagerAdapter
-import com.arlequins.zoco_1.ui.menuDrawer.myProducts.MyProductsPagerAdapter
-
-
-import com.google.android.material.tabs.TabLayout
+import com.arlequins.zoco_1.ui.tabMyProducts.store.NewStoreFragment
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var mainViewModel: MainViewModel
     private lateinit var binding: ActivityMainBinding
+    private lateinit var navController: NavController
+    private lateinit var auth: FirebaseAuth
+    private lateinit var mainMenu: Menu
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        val splashScreen = installSplashScreen()
 
+        super.onCreate(savedInstanceState)
+        mainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        auth = Firebase.auth
+        splashScreen.setKeepOnScreenCondition{false}
         setSupportActionBar(binding.appBarMain.toolbar)
 
-        binding.appBarMain.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-
-        //menu tabs
-        val indexPagerAdapter = IndexPagerAdapter(this, supportFragmentManager)
-        val myProductsPagerAdapter = MyProductsPagerAdapter(this, supportFragmentManager)
-        val indexViewPager: ViewPager = binding.appBarMain.indexPager
-        val myProductsViewPager: ViewPager = binding.appBarMain.myProductsPager
-        val tabs: TabLayout = binding.appBarMain.tabs
-        indexViewPager.adapter = indexPagerAdapter
-        myProductsViewPager.adapter = myProductsPagerAdapter
-
-
-
-        navController.addOnDestinationChangedListener{_, destination, _ ->
-            when (destination.id){
-                R.id.nav_index -> {
-                    myProductsViewPager.visibility = View.GONE
-                    tabs.setupWithViewPager(indexViewPager)
-                    tabs.visibility = View.VISIBLE
-                    indexViewPager.visibility = View.VISIBLE
-                }
-                R.id.nav_my_products -> {
-                    indexViewPager.visibility = View.GONE
-                    tabs.setupWithViewPager(myProductsViewPager)
-                    tabs.visibility = View.VISIBLE
-                    myProductsViewPager.visibility = View.VISIBLE
-                }
-                else -> {
-                    tabs.visibility = View.GONE
-                    indexViewPager.visibility = View.GONE
-                    myProductsViewPager.visibility = View.GONE
-                }
-            }
-        }
+        navController = findNavController(R.id.nav_host_fragment_content_main)
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_index,
+                nav_index,
                 R.id.nav_category,
                 R.id.nav_my_products,
                 R.id.nav_notifications,
@@ -86,18 +60,50 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_settings
             ), drawerLayout
         )
+
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        mainViewModel.showMsg.observe(this){msg ->
+            showMsg(msg.toString())
+        }
+        mainViewModel.searchText.observe(this){searchText ->
+            val view = findViewById<TextView>(R.id.text_academics)
+            view.text = searchText
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
+        menuInflater.inflate(R.menu.main_menu, menu)
+        mainMenu = menu
         return true
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.menu_search -> {
+                navController = findNavController(R.id.nav_host_fragment_content_main)
+                navController.addOnDestinationChangedListener{_,destination,_->
+                    mainViewModel.search(mainMenu, destination)
+                }
+            }
+            R.id.menu_log_out -> {
+                onLogout()
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun onLogout() {
+        TODO("Not yet implemented")
+    }
+
     override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    private fun showMsg(msg: String?){
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
     }
 }
