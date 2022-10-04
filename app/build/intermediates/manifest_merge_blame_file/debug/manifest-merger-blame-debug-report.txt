@@ -222,13 +222,13 @@
 121-->[androidx.window:window:1.0.0] C:\Users\migue\.gradle\caches\transforms-3\26d3689d7fab27324377a5d5e3021afe\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 122
 123        <provider
-123-->[com.squareup.picasso:picasso:2.8] C:\Users\migue\.gradle\caches\transforms-3\b7b17f8bbd16149f132f1f050cbe90d9\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
+123-->[com.squareup.picasso:picasso:2.71828] C:\Users\migue\.gradle\caches\transforms-3\c4c02d88c3806ea534cb1a5752a4dab8\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
 124            android:name="com.squareup.picasso.PicassoProvider"
-124-->[com.squareup.picasso:picasso:2.8] C:\Users\migue\.gradle\caches\transforms-3\b7b17f8bbd16149f132f1f050cbe90d9\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
+124-->[com.squareup.picasso:picasso:2.71828] C:\Users\migue\.gradle\caches\transforms-3\c4c02d88c3806ea534cb1a5752a4dab8\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
 125            android:authorities="com.arlequins.zoco_1.com.squareup.picasso"
-125-->[com.squareup.picasso:picasso:2.8] C:\Users\migue\.gradle\caches\transforms-3\b7b17f8bbd16149f132f1f050cbe90d9\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
+125-->[com.squareup.picasso:picasso:2.71828] C:\Users\migue\.gradle\caches\transforms-3\c4c02d88c3806ea534cb1a5752a4dab8\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
 126            android:exported="false" />
-126-->[com.squareup.picasso:picasso:2.8] C:\Users\migue\.gradle\caches\transforms-3\b7b17f8bbd16149f132f1f050cbe90d9\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
+126-->[com.squareup.picasso:picasso:2.71828] C:\Users\migue\.gradle\caches\transforms-3\c4c02d88c3806ea534cb1a5752a4dab8\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
 127        <provider
 127-->[androidx.emoji2:emoji2:1.2.0] C:\Users\migue\.gradle\caches\transforms-3\a4b08aeb0d4096f52028266c24f5199f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 128            android:name="androidx.startup.InitializationProvider"

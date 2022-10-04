@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+
+    <color name="my_white">#EDFCFDFC</color>
     <color name="primary">#007857</color>
     <color name="primary_dark">#004a2d</color>
     <color name="primary_light">#46a783</color>
@@ -19,6 +21,7 @@
     <color name="text_h3">#409247</color>
     <color name="text_h3b">#E1363C36</color>
     <color name="text_h4">#61C165</color>
+    <color name="text_send">#E8C6FFC8</color>
     <color name="secondary_text">#757575</color>
     <color name="icons">#E6E4E8E4</color>
     <color name="divider">#BDBDBD</color>

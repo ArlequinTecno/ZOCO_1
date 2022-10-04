@@ -1,5 +1,9 @@
-package com.arlequins.zoco_1.subNav
+package com.arlequins.zoco_1.interfaces
 
-interface SubNav {
+import com.arlequins.zoco_1.model.Article
+import com.arlequins.zoco_1.model.NotificationModel
 
+interface OnFragmentActionListener {
+    fun onClickedFragmentCardView(article: Article)
+    fun navTrolleyToIndex()
 }

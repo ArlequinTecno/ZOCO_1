@@ -7,12 +7,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.arlequins.zoco_1.R
 import com.arlequins.zoco_1.databinding.CardViewArticleItemBinding
 import com.arlequins.zoco_1.model.Article
-import com.squareup.picasso.Picasso
 
-class AllProductsAdapter(
+class ArticleAdapter(
     private val articleList: ArrayList<Article>,
     private val onItemClicked: (Article) -> Unit
-    ) : RecyclerView.Adapter<AllProductsAdapter.ArticleViewHolder>(){
+    ) : RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -51,6 +50,4 @@ class AllProductsAdapter(
 
         }
     }
-
-
 }

@@ -44,12 +44,20 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xhdpi\\ic_menu_settings.png"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xhdpi_ic_received_msg.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xhdpi\\ic_received_msg.png"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxhdpi_ic_chip_light.png.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxhdpi\\ic_chip_light.png"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-hdpi_ic_x_mark.png.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-hdpi\\ic_x_mark.png"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxxhdpi_ic_minus.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxxhdpi\\ic_minus.png"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable_ic_sign_out.xml.flat",
@@ -76,6 +84,18 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-mdpi\\ic_menu_my_products.png"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxhdpi_ic_minus.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxhdpi\\ic_minus.png"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_card_view_msg_in_item.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\card_view_msg_in_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_card_view_product_item.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\card_view_product_item.xml"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxhdpi_ic_chip_language.png.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxhdpi\\ic_chip_language.png"
     },
@@ -88,6 +108,10 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxxhdpi\\ic_menu_carrito.png"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-hdpi_ic_minus.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-hdpi\\ic_minus.png"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxhdpi_ic_menu_notifications.png.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxhdpi\\ic_menu_notifications.png"
     },
@@ -98,6 +122,10 @@
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-hdpi_ic_menu_category.png.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-hdpi\\ic_menu_category.png"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxhdpi_ic_received_msg.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxhdpi\\ic_received_msg.png"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_fragment_settings.xml.flat",
@@ -140,12 +168,12 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_services.xml"
     },
     {
-        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_fragment_foods.xml.flat",
-        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_foods.xml"
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_card_view_msg_out_item.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\card_view_msg_out_item.xml"
     },
     {
-        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable_background_oval.xml.flat",
-        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable\\background_oval.xml"
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_fragment_foods.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_foods.xml"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\mipmap-hdpi_ic_launcher.png.flat",
@@ -184,6 +212,10 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xhdpi\\ic_chip_light.png"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_card_view_notification_item.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\card_view_notification_item.xml"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable_side_nav_bar.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable\\side_nav_bar.xml"
     },
@@ -198,6 +230,10 @@
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxhdpi_ic_x_mark.png.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxhdpi\\ic_x_mark.png"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xhdpi_ic_minus.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xhdpi\\ic_minus.png"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-hdpi_ic_chip_language.png.flat",
@@ -216,6 +252,18 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xhdpi\\ic_check_mark.png"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable_burger.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable\\burger.png"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable_ic_calculate_24.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable\\ic_calculate_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable_store.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable\\store.png"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_fragment_articles.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_articles.xml"
     },
@@ -228,12 +276,20 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-hdpi_ic_send_msg.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-hdpi\\ic_send_msg.png"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_fragment_sign_up.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_sign_up.xml"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_fragment_my_products.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_my_products.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-mdpi_ic_received_msg.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-mdpi\\ic_received_msg.png"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxxhdpi_ic_menu_notifications.png.flat",
@@ -256,6 +312,10 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xhdpi\\ic_menu_index.png"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable_menos.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable\\menos.png"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\animator_from_text_anim.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\animator\\from_text_anim.xml"
     },
@@ -270,6 +330,10 @@
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_fragment_detail_notification.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_detail_notification.xml"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxhdpi_ic_menu_my_products.png.flat",
@@ -292,12 +356,24 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxxhdpi_ic_received_msg.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxxhdpi\\ic_received_msg.png"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xhdpi_ic_menu_notifications.png.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xhdpi\\ic_menu_notifications.png"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxxhdpi_ic_send_msg.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxxhdpi\\ic_send_msg.png"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_fragment_new_store.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_new_store.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-mdpi_ic_send_msg.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-mdpi\\ic_send_msg.png"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_fragment_index.xml.flat",
@@ -344,12 +420,20 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxxhdpi\\ic_chip_language.png"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-mdpi_ic_minus.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-mdpi\\ic_minus.png"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\font_comfortaa_light.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\font\\comfortaa_light.xml"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xhdpi_ic_menu_about_zoco.png.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xhdpi\\ic_menu_about_zoco.png"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable_products.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable\\products.png"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_fragment_log_in.xml.flat",
@@ -392,12 +476,20 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-mdpi_ic_add.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-mdpi\\ic_add.png"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxxhdpi_ic_menu_index.png.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxxhdpi\\ic_menu_index.png"
     },
     {
-        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-mdpi_ic_add.png.flat",
-        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-mdpi\\ic_add.png"
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable_background_rectagle.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable\\background_rectagle.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable_stationery.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable\\stationery.png"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxhdpi_ic_add.png.flat",
@@ -408,12 +500,24 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable_promotion.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable\\promotion.png"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xhdpi_ic_x_mark.png.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xhdpi\\ic_x_mark.png"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_fragment_details_article.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_details_article.xml"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxxhdpi_ic_add.png.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxxhdpi\\ic_add.png"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xhdpi_ic_send_msg.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xhdpi\\ic_send_msg.png"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_fragment_new_article.xml.flat",
@@ -448,6 +552,14 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable\\ic_product.xml"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable_consult.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable\\consult.png"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxhdpi_ic_send_msg.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxhdpi\\ic_send_msg.png"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\xml\\data_extraction_rules.xml"
     },
@@ -468,12 +580,20 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_about_zoco.xml"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable_ic_baseline_send_24.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable\\ic_baseline_send_24.xml"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxhdpi_ic_menu_index.png.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xxhdpi\\ic_menu_index.png"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_fragment_trolley.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_trolley.xml"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\mipmap-hdpi_ic_launcher_round.png.flat",
@@ -496,6 +616,10 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_all_products.xml"
     },
     {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-hdpi_ic_received_msg.png.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-hdpi\\ic_received_msg.png"
+    },
+    {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\layout_fragment_store.xml.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_store.xml"
     },
@@ -510,6 +634,10 @@
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xhdpi_ic_chip_language.png.flat",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-xhdpi\\ic_chip_language.png"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-v24_background_oval.xml.flat",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\drawable-v24\\background_oval.xml"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-merged_res-54:\\drawable-xxhdpi_ic_check_mark.png.flat",

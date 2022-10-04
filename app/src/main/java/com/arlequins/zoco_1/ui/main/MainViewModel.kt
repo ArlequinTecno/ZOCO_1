@@ -55,7 +55,6 @@ class MainViewModel: ViewModel() {
                         if (newText.isNotEmpty()) {
                             when(destination.id){
                                 R.id.nav_index ->{
-                                    Log.i("Prueba", "en index")
                                     _searchText.postValue(searchRepository.search(newText, "index"))
                                 }
                                 R.id.nav_category ->{

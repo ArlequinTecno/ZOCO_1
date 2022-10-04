@@ -4,10 +4,10 @@ package com.arlequins.zoco_1.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.arlequins.zoco_1.R;
@@ -20,12 +20,12 @@ public final class FragmentAcademicsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView textAcademics;
+  public final RecyclerView academicRecyclerView;
 
   private FragmentAcademicsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView textAcademics) {
+      @NonNull RecyclerView academicRecyclerView) {
     this.rootView = rootView;
-    this.textAcademics = textAcademics;
+    this.academicRecyclerView = academicRecyclerView;
   }
 
   @Override
@@ -55,13 +55,13 @@ public final class FragmentAcademicsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.text_academics;
-      TextView textAcademics = ViewBindings.findChildViewById(rootView, id);
-      if (textAcademics == null) {
+      id = R.id.academic_recycler_view;
+      RecyclerView academicRecyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (academicRecyclerView == null) {
         break missingId;
       }
 
-      return new FragmentAcademicsBinding((ConstraintLayout) rootView, textAcademics);
+      return new FragmentAcademicsBinding((ConstraintLayout) rootView, academicRecyclerView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

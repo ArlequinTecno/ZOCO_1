@@ -6,7 +6,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.arlequins.zoco_1.data.ArticleRepository
 import com.arlequins.zoco_1.data.ResourceRemote
+import com.arlequins.zoco_1.data.UserRepository
 import com.arlequins.zoco_1.model.Article
+import com.arlequins.zoco_1.model.User
 import kotlinx.coroutines.launch
 
 class NewArticleViewModel : ViewModel() {
@@ -18,6 +20,7 @@ class NewArticleViewModel : ViewModel() {
     var createArticleSuccess: LiveData<String?> = _createArticleSuccess
 
     private val articleRepository = ArticleRepository()
+    private val userRepository = UserRepository()
 
     fun validateFields(
         name: String,
@@ -46,6 +49,22 @@ class NewArticleViewModel : ViewModel() {
                     state = state,
                     urlPicture = ""
                 )
+                val user = User()
+                val myUser = userRepository.myUser(user)
+                myUser.let { resourceRemoteUser ->
+                    when(resourceRemoteUser) {
+                        is ResourceRemote.Success -> {
+                            article.uname = user.name
+                            article.phone = user.phone
+                        }
+                        is ResourceRemote.Error -> {
+                            article.uname = ""
+                            article.phone = ""
+                        }
+                        is ResourceRemote.Loading -> TODO()
+                    }
+                }
+
                 val result = articleRepository.createArticle(article)
                 result.let { resourceRemote ->
                     when (resourceRemote) {
@@ -57,9 +76,7 @@ class NewArticleViewModel : ViewModel() {
                             val msg = result.message
                             _showMsg.postValue(msg)
                         }
-                        else -> {
-                            //Don´t use
-                        }
+                        is ResourceRemote.Loading -> TODO()
                     }
                 }
             }

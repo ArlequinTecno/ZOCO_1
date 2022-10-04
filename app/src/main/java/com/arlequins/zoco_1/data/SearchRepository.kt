@@ -10,7 +10,7 @@ class SearchRepository {
     private val articleRepository = ArticleRepository()
     private val categoryRepository = CategoryRepository()
 
-    suspend fun search(newText: String, context : String): String {
+    suspend fun search(newText: String, context : String): String? {
 
         when(context){
             "index" ->{
@@ -20,11 +20,11 @@ class SearchRepository {
                     val article = doc.toObject<Article>()
                     val name = article?.name.toString()
                     article?.name?.let { Log.d("Index", it) }
+
                     if (inString(name, newText))
                         return "Nombre: $name " +
                                 "\nPrecio: ${article?.price}" +
                                 "\nDescripción: ${article?.description}"
-
                 }
             }
             "category" -> {

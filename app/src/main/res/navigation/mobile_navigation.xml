@@ -4,57 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/nav_log_in">
+    app:startDestination="@id/nav_notifications">
 
-    <fragment
-        android:id="@+id/nav_index"
-        android:name="com.arlequins.zoco_1.ui.menuDrawer.index.IndexFragment"
-        android:label="@string/menu_index"
-        tools:layout="@layout/fragment_index" >
-        <action
-            android:id="@+id/action_nav_index_to_nav_my_products"
-            app:destination="@id/nav_my_products" />
-    </fragment>
 
-    <fragment
-        android:id="@+id/nav_category"
-        android:name="com.arlequins.zoco_1.ui.menuDrawer.category.CategoryFragment"
-        android:label="@string/menu_category"
-        tools:layout="@layout/fragment_category" >
-        <action
-            android:id="@+id/action_nav_category_to_nav_new_category"
-            app:destination="@id/nav_new_category" />
-    </fragment>
-    <fragment
-        android:id="@+id/nav_my_products"
-        android:name="com.arlequins.zoco_1.ui.menuDrawer.myProducts.MyProductsFragment"
-        android:label="@string/menu_my_products"
-        tools:layout="@layout/fragment_my_products" >
-        <action
-            android:id="@+id/action_nav_my_products_to_nav_newArticle"
-            app:destination="@id/nav_newArticle" />
-        <action
-            android:id="@+id/action_nav_my_products_to_nav_new_store"
-            app:destination="@id/nav_new_store" />
-        <action
-            android:id="@+id/action_nav_my_products_to_nav_index"
-            app:destination="@id/nav_index" />
-    </fragment>
-    <fragment
-        android:id="@+id/nav_about_zoco"
-        android:name="com.arlequins.zoco_1.ui.menuDrawer.aboutZoco.AboutZocoFragment"
-        android:label="@string/menu_about_zoco"
-        tools:layout="@layout/fragment_about_zoco" />
-    <fragment
-        android:id="@+id/nav_settings"
-        android:name="com.arlequins.zoco_1.ui.menuDrawer.settings.SettingsFragment"
-        android:label="@string/menu_settings"
-        tools:layout="@layout/fragment_settings" />
-    <fragment
-        android:id="@+id/nav_notifications"
-        android:name="com.arlequins.zoco_1.ui.menuDrawer.notifications.NotificationsFragment"
-        android:label="@string/menu_notifications"
-        tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/nav_log_in"
         android:name="com.arlequins.zoco_1.ui.signin.login.LogInFragment"
@@ -76,13 +28,112 @@
             android:id="@+id/action_nav_signup_to_nav_log_in"
             app:destination="@id/nav_log_in" />
     </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_index"
+        android:name="com.arlequins.zoco_1.ui.menuDrawer.index.IndexFragment"
+        android:label="@string/menu_index"
+        tools:layout="@layout/fragment_index" >
+        <action
+            android:id="@+id/action_nav_index_to_nav_details_article_fragment"
+            app:destination="@id/nav_details_article_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_all_products_fragment"
+        android:name="com.arlequins.zoco_1.ui.tabsIndex.allProducts.AllProductsFragment"
+        android:label="@string/tab_all_products"
+        tools:layout="@layout/fragment_all_products" />
+    <fragment
+        android:id="@+id/nav_academic_fragment"
+        android:name="com.arlequins.zoco_1.ui.tabsIndex.academics.AcademicsFragment"
+        android:label="@string/tab_academics"
+        tools:layout="@layout/fragment_academics" />
+    <fragment
+        android:id="@+id/nav_food_fragment"
+        android:name="com.arlequins.zoco_1.ui.tabsIndex.foods.FoodsFragment"
+        android:label="@string/tab_foods"
+        tools:layout="@layout/fragment_foods" />
+    <fragment
+        android:id="@+id/nav_service_fragment"
+        android:name="com.arlequins.zoco_1.ui.tabsIndex.services.ServicesFragment"
+        android:label="@string/tab_services"
+        tools:layout="@layout/fragment_services" />
+    <fragment
+        android:id="@+id/nav_discount_fragment"
+        android:name="com.arlequins.zoco_1.ui.tabsIndex.discount.DiscountFragment"
+        android:label="@string/tab_discounts"
+        tools:layout="@layout/fragment_discount" />
+
+    <fragment
+        android:id="@+id/nav_details_article_fragment"
+        android:name="com.arlequins.zoco_1.ui.details.detailsArticle.DetailsArticleFragment"
+        android:label="@string/details_article"
+        tools:layout="@layout/fragment_details_article" >
+        <argument
+            android:name="article"
+            app:argType="com.arlequins.zoco_1.model.Article" />
+        <action
+            android:id="@+id/action_nav_details_article_fragment_to_nav_index"
+            app:destination="@id/nav_index" />
+        <action
+            android:id="@+id/action_nav_details_article_fragment_to_nav_trolley_fragment"
+            app:destination="@id/nav_trolley_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_trolley_fragment"
+        android:name="com.arlequins.zoco_1.ui.trolley.TrolleyFragment"
+        android:label="@string/nav_trolley_fragment"
+        tools:layout="@layout/fragment_trolley" >
+        <argument
+            android:name="article"
+            app:argType="com.arlequins.zoco_1.model.Article" />
+        <action
+            android:id="@+id/action_nav_trolley_fragment_to_nav_index"
+            app:destination="@id/nav_index" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.arlequins.zoco_1.ui.menuDrawer.category.CategoryFragment"
+        android:label="@string/menu_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_nav_category_to_nav_new_category"
+            app:destination="@id/nav_new_category" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_new_category"
+        android:name="com.arlequins.zoco_1.ui.menuDrawer.category.NewCategoryFragment"
+        android:label="fragment_new_category"
+        tools:layout="@layout/fragment_new_category" >
+        <action
+            android:id="@+id/action_nav_new_category_to_nav_category"
+            app:destination="@id/nav_category" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_my_products"
+        android:name="com.arlequins.zoco_1.ui.menuDrawer.myProducts.MyProductsFragment"
+        android:label="@string/menu_my_products"
+        tools:layout="@layout/fragment_my_products" >
+        <action
+            android:id="@+id/action_nav_my_products_to_nav_newArticle"
+            app:destination="@id/nav_new_article" />
+        <action
+            android:id="@+id/action_nav_my_products_to_nav_new_store"
+            app:destination="@id/nav_new_store" />
+    </fragment>
+
     <fragment
         android:id="@+id/nav_article"
         android:name="com.arlequins.zoco_1.ui.tabMyProducts.articles.ArticlesFragment"
         android:label="fragment_articles"
         tools:layout="@layout/fragment_articles" />
     <fragment
-        android:id="@+id/nav_newArticle"
+        android:id="@+id/nav_new_article"
         android:name="com.arlequins.zoco_1.ui.tabMyProducts.articles.NewArticleFragment"
         android:label="@string/register_new_article"
         tools:layout="@layout/fragment_new_article">
@@ -90,6 +141,7 @@
             android:id="@+id/action_nav_newArticle_to_nav_my_products"
             app:destination="@id/nav_my_products" />
     </fragment>
+
     <fragment
         android:id="@+id/nav_store"
         android:name="com.arlequins.zoco_1.ui.tabMyProducts.store.StoreFragment"
@@ -104,14 +156,40 @@
             android:id="@+id/action_nav_new_store_to_nav_my_products"
             app:destination="@id/nav_my_products" />
     </fragment>
+
+
     <fragment
-        android:id="@+id/nav_new_category"
-        android:name="com.arlequins.zoco_1.ui.menuDrawer.category.NewCategoryFragment"
-        android:label="fragment_new_category"
-        tools:layout="@layout/fragment_new_category" >
+        android:id="@+id/nav_about_zoco"
+        android:name="com.arlequins.zoco_1.ui.menuDrawer.aboutZoco.AboutZocoFragment"
+        android:label="@string/menu_about_zoco"
+        tools:layout="@layout/fragment_about_zoco" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.arlequins.zoco_1.ui.menuDrawer.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.arlequins.zoco_1.ui.menuDrawer.notifications.NotificationsFragment"
+        android:label="@string/menu_notifications"
+        tools:layout="@layout/fragment_notifications" >
         <action
-            android:id="@+id/action_nav_new_category_to_nav_category"
-            app:destination="@id/nav_category" />
+            android:id="@+id/action_nav_notifications_to_nav_detail_notification_fragment"
+            app:destination="@id/nav_detail_notification_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_detail_notification_fragment"
+        android:name="com.arlequins.zoco_1.ui.details.detailsNotification.DetailNotificationFragment"
+        android:label="@string/nav_detail_notification"
+        tools:layout="@layout/fragment_detail_notification">
+        <action
+            android:id="@+id/action_nav_detail_notification_fragment_to_nav_notifications"
+            app:destination="@id/nav_notifications" />
+        <argument
+            android:name="notificationModel"
+            app:argType="com.arlequins.zoco_1.model.NotificationModel"/>
     </fragment>
 
 </navigation>

@@ -1,5 +1,6 @@
 package com.arlequins.zoco_1.ui.menuDrawer.index
 
+
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
@@ -11,17 +12,33 @@ import com.arlequins.zoco_1.ui.tabsIndex.services.ServicesFragment
 
 class IndexPagerAdapter(fm: FragmentActivity) :
     FragmentStateAdapter(fm) {
+    //var currentPage = 0
+
     override fun getItemCount(): Int = 5
 
     override fun createFragment(position: Int): Fragment {
         return when(position){
-            0 -> AllProductsFragment()
-            1 -> AcademicsFragment()
-            2 -> FoodsFragment()
-            3 -> ServicesFragment()
-            4 -> DiscountFragment()
-            else -> AllProductsFragment()
+            0 -> {
+                AllProductsFragment()
+            }
+            1 -> {
+                AcademicsFragment()
+            }
+            2 -> {
+                FoodsFragment()
+            }
+            3 -> {
+                ServicesFragment()
+            }
+            4 -> {
+                DiscountFragment()
+            }
+            else -> {
+                AllProductsFragment()
+            }
         }
     }
+
+    //fun getPage(): Int = currentPage
 
 }

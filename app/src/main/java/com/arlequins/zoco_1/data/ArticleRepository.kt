@@ -2,12 +2,14 @@ package com.arlequins.zoco_1.data
 
 import android.util.Log
 import com.arlequins.zoco_1.model.Article
+import com.arlequins.zoco_1.model.User
 import com.google.firebase.FirebaseNetworkException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestoreException
 import com.google.firebase.firestore.QuerySnapshot
 import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.tasks.await
 
@@ -25,8 +27,10 @@ class ArticleRepository {
             val documentArticle = path?.document()
             article.id = documentArticle?.id
             article.uid = auth.uid
-            documentArticle?.id?.let { path.document(it).set(article).await() }
-            db.collection(articleCollection).document(article.id.toString()).set(article).await()
+            documentArticle?.id?.let {
+                path.document(it).set(article).await()
+                db.collection(articleCollection).document(it).set(article).await()
+            }
             ResourceRemote.Success(data = article.id)
         }catch(e: FirebaseFirestoreException){
             e.localizedMessage?.let { Log.e("CreateArticles", it) }

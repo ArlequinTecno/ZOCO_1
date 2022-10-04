@@ -41,8 +41,7 @@ class NewCategoryViewModel : ViewModel() {
                             _showMsg.postValue("La categoría se agregó con exito")
                         }
                         is ResourceRemote.Error -> {
-                            val msg = result.message
-                            _showMsg.postValue(msg)
+                            _showMsg.postValue(result.message)
                         }
                         else -> {
                             //Don´t use
@@ -53,5 +52,4 @@ class NewCategoryViewModel : ViewModel() {
             }
         }
     }
-    // TODO: Implement the ViewModel
 }

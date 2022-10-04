@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintSuper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background"
+    tools:context=".ui.details.detailsNotification.DetailNotificationFragment">
+
+    <ScrollView
+        android:id="@+id/notification_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/frameLayout2"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:background="@color/transparency"
+                android:padding="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/picture_detail_notification_image_view"
+                            android:layout_width="0dp"
+                            android:layout_height="220dp"
+                            android:layout_marginTop="4dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/burger"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/name_detail_product_text_view"
+                            style="@style/h2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="16dp"
+                            android:gravity="center"
+                            android:text="@string/hint_name_product"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/picture_detail_notification_image_view" />
+
+                        <TextView
+                            android:id="@+id/price_detail_article_text_view"
+                            style="@style/h4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/text_price_detail"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/name_detail_product_text_view" />
+
+                        <TextView
+                            android:id="@+id/price_detail_product_text_view"
+                            style="@style/h4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:text="@string/hint_price_product"
+                            app:layout_constraintBottom_toBottomOf="@+id/price_detail_article_text_view"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/price_detail_article_text_view"
+                            app:layout_constraintTop_toTopOf="@+id/price_detail_article_text_view" />
+
+                        <TextView
+                            android:id="@+id/amount_detail_text_view"
+                            style="@style/h4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/text_amount_article"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/price_detail_article_text_view" />
+
+                        <TextView
+                            android:id="@+id/amount_detail_product_text_view"
+                            style="@style/h4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:text="@string/hint_amount_article"
+                            app:layout_constraintBottom_toBottomOf="@+id/amount_detail_text_view"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/amount_detail_text_view"
+                            app:layout_constraintTop_toTopOf="@+id/amount_detail_text_view" />
+
+                        <TextView
+                            android:id="@+id/total_detail_text_view"
+                            style="@style/h3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/text_total"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/amount_detail_text_view" />
+
+                        <TextView
+                            android:id="@+id/total_detail_product_text_view"
+                            style="@style/h3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:text="@string/hint_total"
+                            app:layout_constraintBottom_toBottomOf="@+id/total_detail_text_view"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/total_detail_text_view"
+                            app:layout_constraintTop_toTopOf="@+id/total_detail_text_view" />
+
+                        <TextView
+                            android:id="@+id/date_detail_product_text_view"
+                            style="@style/p1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:gravity="end"
+                            android:text="@string/hint_date"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/total_detail_product_text_view" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/msg_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frameLayout"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:minHeight="250dp"
+                android:padding="8dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/primary_background"
+        android:padding="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/msg_input_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_rectagle"
+                android:hint="@string/hint_msg"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="2dp"
+                android:textColorHint="#616161"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/send_msg_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/send_msg_button"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_oval"
+                android:gravity="start"
+                app:icon="@drawable/ic_baseline_send_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

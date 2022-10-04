@@ -2,8 +2,8 @@
     <string name="app_name">ZOCO</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">ZOCO</string>
+    <string name="nav_header_subtitle">Tu mercado favorito</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -39,6 +39,13 @@
     <string name="hint_store">Mis negocios</string>
     <string name="hint_name_category">Nombre de la categoría</string>
     <string name="hint_description_category">Descripción de la categoría</string>
+    <string name="hint_date">Fecha</string>
+    <string name="hint_number_of_articles">Cantidad de producto</string>
+    <string name="hint_msg_request_product">Escribir al vendedor</string>
+    <string name="hint_name_seller">Nombre del vendedor</string>
+    <string name="hint_phone_seller">Telefono del vendedor</string>
+    <string name="hint_amount_article">Cantidad solicitada</string>
+    <string name="hint_total">monto total</string>
 
     <string name="chip_mode_light">Modo claro</string>
     <string name="chip_mode_night">Modo oscuro</string>
@@ -50,11 +57,13 @@
     <string name="chip_state_store_hide">Ocultar</string>
 
     <string name="button_save">Guardar</string>
+    <string name="button_send">Enviar</string>
     <string name="button_add">Agregar</string>
     <string name="button_login">Iniciar sesión</string>
     <string name="button_signup">Registarse</string>
     <string name="button_new_article">Agregar un artículo</string>
     <string name="button_new_store">Agregar un negocio</string>
+    <string name="button_request_article">Solicitar producto</string>
 
     <string name="title_login_fragment">INICIAR SESIÓN</string>
     <string name="title_signup_fragment">REGISTRARSE</string>
@@ -69,12 +78,22 @@
     <string name="text_ask_aunt">¿No tienes cuenta?</string>
     <string name="text_signup_here"><u>Registrate aquí</u></string>
     <string name="text_email_domain"><u>@udea.edu.co</u></string>
-
+    <string name="text_price_detail">Precio: $</string>
+    <string name="text_category_detail">Categoría: </string>
+    <string name="text_store_detail">Tienda: </string>
+    <string name="text_total">Total: $</string>
+    <string name="text_seller">Vendedor: </string>
+    <string name="text_phone_seller">Cel:</string>
+    <string name="text_amount_article">Cantidad: </string>
 
     <string name="todo">TODO</string>
     <string name="menu_search">Buscar</string>
     <string name="menu_signOut">Cerrar sesión</string>
     <string name="menu_log_out">Cerrar sesión</string>
+    <string name="details_article">Detalle del producto</string>
+    <string name="nav_trolley_fragment">Realizar pedido</string>
+    <string name="nav_detail_notification">Detalle de la notificación</string>
+    <string name="hint_msg">Mensaje</string>
 
 
     <string-array name="array_categories">

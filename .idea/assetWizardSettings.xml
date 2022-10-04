@@ -37,7 +37,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\migue\OneDrive\Documentos\proyectos de programación\móvil\prototipoApp\img\icons\x-mark.png" />
+                                                <entry key="imagePath" value="C:\Users\migue\OneDrive\Documentos\proyectos de programación\móvil\prototipoApp\img\icons\marca-doble.png" />
                                                 <entry key="opacityPercent" value="60" />
                                                 <entry key="paddingPercent" value="5" />
                                               </map>
@@ -72,8 +72,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\migue\OneDrive\Documentos\proyectos de programación\móvil\prototipoApp\img\icons\x-mark.png" />
-                                      <entry key="outputName" value="ic_x_mark" />
+                                      <entry key="imageAsset" value="C:\Users\migue\OneDrive\Documentos\proyectos de programación\móvil\prototipoApp\img\icons\marca-doble.png" />
+                                      <entry key="outputName" value="ic_received_msg" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -354,7 +354,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/logout/baseline_logout_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/send/baseline_send_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -367,7 +367,7 @@
                             <entry key="autoMirrored" value="true" />
                             <entry key="color" value="393b39" />
                             <entry key="opacityPercent" value="90" />
-                            <entry key="outputName" value="ic_sign_out_black" />
+                            <entry key="outputName" value="ic_baseline_send_24" />
                             <entry key="sourceFile" value="C:\Users\migue\OneDrive\Documentos\proyectos de programación\móvil\prototipoApp\img\logo\logo_zoco.svg" />
                           </map>
                         </option>

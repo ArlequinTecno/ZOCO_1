@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -64,15 +65,24 @@ class NewStoreFragment : Fragment(){
             }
         }
 
-        val callback = requireActivity().onBackPressedDispatcher.addCallback(this) {
-            findNavController().navigate(NewStoreFragmentDirections.actionNavNewStoreToNavMyProducts())
-        }
+        requireActivity().onBackPressedDispatcher.addCallback(
+            viewLifecycleOwner,
+            object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    if (isEnabled) {
+                        isEnabled = false
+                        goToMyproducts()
+                    }
+                }
+            }
+        )
         return newStoreBinding.root
     }
     override fun onResume() {
         super.onResume()
         (activity as AppCompatActivity).supportActionBar!!.hide()
     }
+
     private fun goToMyproducts(){
         findNavController().navigate(NewStoreFragmentDirections.actionNavNewStoreToNavMyProducts())
     }
@@ -99,4 +109,6 @@ class NewStoreFragment : Fragment(){
             }
         }
     }
+
+
 }

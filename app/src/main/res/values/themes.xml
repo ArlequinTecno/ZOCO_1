@@ -33,7 +33,7 @@
     </style>
 
     <style name="TitleTextView">
-        <item name="android:fontFamily">@fonts/comfortaa_bold</item>
+        <item name="android:fontFamily">@fonts/comfortaa</item>
         <item name="android:textColor">@color/primary_dark</item>
     </style>
 
@@ -50,6 +50,19 @@
         <item name="android:textSize">18sp</item>
     </style>
     <style name="h5" parent="TitleTextView">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="DescriptionTextView">
+        <item name="android:fontFamily">@fonts/comfortaa</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+    <style name="p1" parent="DescriptionTextView">
+        <item name="android:textSize">9sp</item>
+    </style>
+    <style name="p2" parent="DescriptionTextView">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="p3" parent="DescriptionTextView">
         <item name="android:textSize">16sp</item>
     </style>
 

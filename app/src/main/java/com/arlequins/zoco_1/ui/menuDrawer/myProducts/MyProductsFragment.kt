@@ -14,12 +14,10 @@ import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.arlequins.zoco_1.R
 import com.arlequins.zoco_1.databinding.FragmentMyProductsBinding
-import com.arlequins.zoco_1.ui.tabMyProducts.store.NewStoreFragmentDirections
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MyProductsFragment : Fragment() {
-
     private var clicked: Boolean = false
     private lateinit var rotateOpen: Animation
     private lateinit var rotateClose: Animation
@@ -83,13 +81,13 @@ class MyProductsFragment : Fragment() {
                 goToNewStore()
             }
         }
-        val callback = requireActivity().onBackPressedDispatcher.addCallback(this) {
-            findNavController().navigate(MyProductsFragmentDirections.actionNavMyProductsToNavIndex())
-        }
+
         return myProductsBinding.root
     }
-    private fun goToMyproducts() {
-        findNavController().navigate(MyProductsFragmentDirections.actionNavMyProductsToNavIndex())
+    override fun onResume() {
+        super.onResume()
+        (activity as AppCompatActivity).supportActionBar!!.show()
+
     }
     private fun goToNewStore() {
         findNavController().navigate(MyProductsFragmentDirections.actionNavMyProductsToNavNewStore())
@@ -101,7 +99,6 @@ class MyProductsFragment : Fragment() {
         setAnimation(clicked)
         setVisibility(clicked)
         clicked = !clicked
-
     }
     private fun setVisibility(clicked: Boolean) {
         with(myProductsBinding){
@@ -148,11 +145,7 @@ class MyProductsFragment : Fragment() {
                 storeFab.isClickable = false
             }
         }
-
     }
 
-    override fun onResume() {
-        super.onResume()
-        (activity as AppCompatActivity).supportActionBar!!.show()
-    }
 }
+

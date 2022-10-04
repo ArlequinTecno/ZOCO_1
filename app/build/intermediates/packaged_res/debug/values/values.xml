@@ -36,6 +36,7 @@
     <color name="ic_launcher_background">#D9EAE0</color>
     <color name="ic_launcher_zoco_background">#CAF8E1</color>
     <color name="icons">#E6E4E8E4</color>
+    <color name="my_white">#EDFCFDFC</color>
     <color name="primary">#007857</color>
     <color name="primary_background">#BDE6DB</color>
     <color name="primary_dark">#004a2d</color>
@@ -52,6 +53,7 @@
     <color name="text_h3">#409247</color>
     <color name="text_h3b">#E1363C36</color>
     <color name="text_h4">#61C165</color>
+    <color name="text_send">#E8C6FFC8</color>
     <color name="transparency">#00FFFFFF</color>
     <color name="warning_color">#DDEC7821</color>
     <color name="white">#FFFFFFFF</color>
@@ -68,7 +70,9 @@
     <string name="button_login">Iniciar sesión</string>
     <string name="button_new_article">Agregar un artículo</string>
     <string name="button_new_store">Agregar un negocio</string>
+    <string name="button_request_article">Solicitar producto</string>
     <string name="button_save">Guardar</string>
+    <string name="button_send">Enviar</string>
     <string name="button_signup">Registarse</string>
     <string name="chip_language_english">English</string>
     <string name="chip_language_spanish">Español</string>
@@ -79,27 +83,36 @@
     <string name="chip_state_store_hide">Ocultar</string>
     <string name="chip_state_store_visibility">Visible</string>
     <string name="default_web_client_id" translatable="false">415534912140-m8rb1korqnnlch2rkq51kbo1i51b00cg.apps.googleusercontent.com</string>
+    <string name="details_article">Detalle del producto</string>
     <string name="gcm_defaultSenderId" translatable="false">415534912140</string>
     <string name="google_api_key" translatable="false">AIzaSyD4n21PzXgaHBeHl4FexDWhPZViqcqaTMU</string>
     <string name="google_app_id" translatable="false">1:415534912140:android:d24d22eea886feecf121a9</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD4n21PzXgaHBeHl4FexDWhPZViqcqaTMU</string>
     <string name="google_storage_bucket" translatable="false">zoco-da0c7.appspot.com</string>
+    <string name="hint_amount_article">Cantidad solicitada</string>
     <string name="hint_category">Categorias</string>
+    <string name="hint_date">Fecha</string>
     <string name="hint_description_category">Descripción de la categoría</string>
     <string name="hint_description_product">Descripción del producto</string>
     <string name="hint_description_store">Descripción del negocio</string>
     <string name="hint_email">Correo electrónico Institucional</string>
     <string name="hint_last_name">Apellidos</string>
     <string name="hint_location_store">Ubicación del negocio</string>
+    <string name="hint_msg">Mensaje</string>
+    <string name="hint_msg_request_product">Escribir al vendedor</string>
     <string name="hint_name">Nombre</string>
     <string name="hint_name_category">Nombre de la categoría</string>
     <string name="hint_name_product">Nombre del producto</string>
+    <string name="hint_name_seller">Nombre del vendedor</string>
     <string name="hint_name_store">Nombre del negocio</string>
+    <string name="hint_number_of_articles">Cantidad de producto</string>
     <string name="hint_passwd">Contraseña</string>
     <string name="hint_phone">Celular</string>
+    <string name="hint_phone_seller">Telefono del vendedor</string>
     <string name="hint_price_product">Precio del producto</string>
     <string name="hint_repasswd">Repetir contraseña</string>
     <string name="hint_store">Mis negocios</string>
+    <string name="hint_total">monto total</string>
     <string name="menu_about_zoco">Acerca de zoco</string>
     <string name="menu_category">Categorias</string>
     <string name="menu_index">Inicio</string>
@@ -109,9 +122,11 @@
     <string name="menu_search">Buscar</string>
     <string name="menu_settings">Configuraciones</string>
     <string name="menu_signOut">Cerrar sesión</string>
+    <string name="nav_detail_notification">Detalle de la notificación</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">Tu mercado favorito</string>
+    <string name="nav_header_title">ZOCO</string>
+    <string name="nav_trolley_fragment">Realizar pedido</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="project_id" translatable="false">zoco-da0c7</string>
@@ -125,15 +140,26 @@
     <string name="tab_foods">Comestibles</string>
     <string name="tab_services">Servicios</string>
     <string name="tab_store">Mis negocios</string>
+    <string name="text_amount_article">Cantidad: </string>
     <string name="text_ask_aunt">¿No tienes cuenta?</string>
+    <string name="text_category_detail">Categoría: </string>
     <string name="text_change_passwd"><u>Cambiar contraseña</u></string>
     <string name="text_email_domain"><u>@udea.edu.co</u></string>
     <string name="text_forgot_password"><u>Recuperar contraseña</u></string>
+    <string name="text_phone_seller">Cel:</string>
+    <string name="text_price_detail">Precio: $</string>
+    <string name="text_seller">Vendedor: </string>
     <string name="text_signup_here"><u>Registrate aquí</u></string>
+    <string name="text_store_detail">Tienda: </string>
+    <string name="text_total">Total: $</string>
     <string name="text_wellcome_msg">Bienvenido a ZOCO</string>
     <string name="title_login_fragment">INICIAR SESIÓN</string>
     <string name="title_signup_fragment">REGISTRARSE</string>
     <string name="todo">TODO</string>
+    <style name="DescriptionTextView">
+        <item name="android:fontFamily">@fonts/comfortaa</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
     <style name="Theme.ZOCO_1" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/primary</item>
@@ -162,7 +188,7 @@
         <item name="postSplashScreenTheme">@style/Theme.ZOCO_1.NoActionBar</item>
     </style>
     <style name="TitleTextView">
-        <item name="android:fontFamily">@fonts/comfortaa_bold</item>
+        <item name="android:fontFamily">@fonts/comfortaa</item>
         <item name="android:textColor">@color/primary_dark</item>
     </style>
     <style name="h1" parent="TitleTextView">
@@ -178,6 +204,15 @@
         <item name="android:textSize">18sp</item>
     </style>
     <style name="h5" parent="TitleTextView">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="p1" parent="DescriptionTextView">
+        <item name="android:textSize">9sp</item>
+    </style>
+    <style name="p2" parent="DescriptionTextView">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="p3" parent="DescriptionTextView">
         <item name="android:textSize">16sp</item>
     </style>
 </resources>

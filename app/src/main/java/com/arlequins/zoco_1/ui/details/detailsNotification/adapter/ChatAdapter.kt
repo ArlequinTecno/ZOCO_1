@@ -7,7 +7,7 @@ import com.arlequins.zoco_1.R
 import com.arlequins.zoco_1.model.Chat
 import kotlin.properties.Delegates
 
-class MsgAdapter(
+class ChatAdapter(
     private val chatList: ArrayList<Chat>,
     private val onItemClicked: (Chat) -> Unit
 ): RecyclerView.Adapter<MsgViewHolder>() {
