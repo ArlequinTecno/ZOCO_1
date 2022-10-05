@@ -51,8 +51,8 @@
         <option value="resourceFile" />
         <option value="Kotlin Interface" />
         <option value="valueResourceFile" />
-        <option value="layoutResourceFile" />
         <option value="Kotlin Data Class" />
+        <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -324,7 +324,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664918664815</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="terminado my producto (hace CRUD)">
+      <created>1664983437814</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664983437814</updated>
+    </task>
+    <task id="LOCAL-00015" summary="terminado categorias">
+      <created>1664988152454</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1664988152454</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -353,7 +367,9 @@
     <MESSAGE value="error presente en funciones de recyclerView" />
     <MESSAGE value="antes de actualizar androidx(1.8.0-&gt;1.9.0)" />
     <MESSAGE value="cambiando el adapter del chat" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambiando el adapter del chat" />
+    <MESSAGE value="terminado my producto (hace CRUD)" />
+    <MESSAGE value="terminado categorias" />
+    <option name="LAST_COMMIT_MESSAGE" value="terminado categorias" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,10 +4,10 @@ package com.arlequins.zoco_1.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.arlequins.zoco_1.R;
@@ -24,13 +24,13 @@ public final class FragmentCategoryBinding implements ViewBinding {
   public final FloatingActionButton addCategoryFab;
 
   @NonNull
-  public final TextView textCategory;
+  public final RecyclerView categoryRecyclerView;
 
   private FragmentCategoryBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton addCategoryFab, @NonNull TextView textCategory) {
+      @NonNull FloatingActionButton addCategoryFab, @NonNull RecyclerView categoryRecyclerView) {
     this.rootView = rootView;
     this.addCategoryFab = addCategoryFab;
-    this.textCategory = textCategory;
+    this.categoryRecyclerView = categoryRecyclerView;
   }
 
   @Override
@@ -66,13 +66,14 @@ public final class FragmentCategoryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.text_category;
-      TextView textCategory = ViewBindings.findChildViewById(rootView, id);
-      if (textCategory == null) {
+      id = R.id.category_recycler_view;
+      RecyclerView categoryRecyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (categoryRecyclerView == null) {
         break missingId;
       }
 
-      return new FragmentCategoryBinding((ConstraintLayout) rootView, addCategoryFab, textCategory);
+      return new FragmentCategoryBinding((ConstraintLayout) rootView, addCategoryFab,
+          categoryRecyclerView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

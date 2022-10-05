@@ -2816,6 +2816,8 @@ int id all_products_recycle_view 0x7f0a0063
 int id always 0x7f0a0064
 int id amount_detail_product_text_view 0x7f0a0065
 int id amount_detail_text_view 0x7f0a0066
+int id amount_item_text_view 0x7f0a02de
+int id amout_text_view 0x7f0a02df
 int id androidx_window_activity_scope 0x7f0a0067
 int id animateToEnd 0x7f0a0068
 int id animateToStart 0x7f0a0069
@@ -2859,6 +2861,7 @@ int id category_autocomplete_text_view 0x7f0a008e
 int id category_detail_text_view 0x7f0a008f
 int id category_input_text_layout 0x7f0a0090
 int id category_picture_image_view 0x7f0a0091
+int id category_recycler_view 0x7f0a02e0
 int id center 0x7f0a0092
 int id centerCrop 0x7f0a0093
 int id centerInside 0x7f0a0094
@@ -3122,6 +3125,7 @@ int id name_article_request_text_view 0x7f0a018c
 int id name_article_text_input_layout 0x7f0a02bf
 int id name_article_text_view 0x7f0a018d
 int id name_category_edit_text 0x7f0a018e
+int id name_category_item_text_view 0x7f0a02e1
 int id name_category_text_input_layout 0x7f0a018f
 int id name_contact_text_view 0x7f0a0190
 int id name_detail_product_text_view 0x7f0a0191
@@ -3203,6 +3207,7 @@ int id peekHeight 0x7f0a01d7
 int id percent 0x7f0a01d8
 int id phon_seller_text_view 0x7f0a01d9
 int id phone_text_view 0x7f0a01da
+int id picture_category_item_image_view 0x7f0a02e2
 int id picture_detail_notification_image_view 0x7f0a01db
 int id picture_detail_product_image_view 0x7f0a01dc
 int id picture_detail_store_image_view 0x7f0a02d5
@@ -3372,7 +3377,6 @@ int id textStart 0x7f0a0276
 int id textTop 0x7f0a0277
 int id textView 0x7f0a0278
 int id text_about_zoco 0x7f0a0279
-int id text_category 0x7f0a027b
 int id text_discount 0x7f0a027c
 int id text_input_end_icon 0x7f0a027d
 int id text_input_error_icon 0x7f0a027e
@@ -3537,6 +3541,7 @@ int layout app_bar_main 0x7f0d001d
 int layout browser_actions_context_menu_page 0x7f0d001e
 int layout browser_actions_context_menu_row 0x7f0d001f
 int layout card_view_article_item 0x7f0d0020
+int layout card_view_category_item 0x7f0d00a6
 int layout card_view_msg_in_item 0x7f0d0021
 int layout card_view_msg_out_item 0x7f0d0022
 int layout card_view_my_article_item 0x7f0d00a3
@@ -3905,6 +3910,7 @@ int string tab_foods 0x7f1300db
 int string tab_services 0x7f1300dc
 int string tab_store 0x7f1300dd
 int string text_amount_article 0x7f1300de
+int string text_amount_category 0x7f1300f3
 int string text_ask_aunt 0x7f1300df
 int string text_category_detail 0x7f1300e0
 int string text_change_passwd 0x7f1300e1

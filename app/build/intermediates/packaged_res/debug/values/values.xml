@@ -147,6 +147,7 @@
     <string name="tab_services">Servicios</string>
     <string name="tab_store">Mis negocios</string>
     <string name="text_amount_article">Cantidad: </string>
+    <string name="text_amount_category">Publicados:</string>
     <string name="text_ask_aunt">¿No tienes cuenta?</string>
     <string name="text_category_detail">Categoría: </string>
     <string name="text_change_passwd"><u>Cambiar contraseña</u></string>

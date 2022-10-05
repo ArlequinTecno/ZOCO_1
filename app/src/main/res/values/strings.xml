@@ -99,6 +99,7 @@
     <string name="fab_edit">Editar</string>
     <string name="fab_trash">Borrar</string>
     <string name="nav_detail_store">"Detalle de negocio "</string>
+    <string name="text_amount_category">Publicados:</string>
 
 
     <string-array name="array_categories">

@@ -2817,6 +2817,8 @@ id all_products_recycle_view
 id always
 id amount_detail_product_text_view
 id amount_detail_text_view
+id amount_item_text_view
+id amout_text_view
 id androidx_window_activity_scope
 id animateToEnd
 id animateToStart
@@ -2860,6 +2862,7 @@ id category_autocomplete_text_view
 id category_detail_text_view
 id category_input_text_layout
 id category_picture_image_view
+id category_recycler_view
 id center
 id centerCrop
 id centerInside
@@ -3123,6 +3126,7 @@ id name_article_request_text_view
 id name_article_text_input_layout
 id name_article_text_view
 id name_category_edit_text
+id name_category_item_text_view
 id name_category_text_input_layout
 id name_contact_text_view
 id name_detail_product_text_view
@@ -3204,6 +3208,7 @@ id peekHeight
 id percent
 id phon_seller_text_view
 id phone_text_view
+id picture_category_item_image_view
 id picture_detail_notification_image_view
 id picture_detail_product_image_view
 id picture_detail_store_image_view
@@ -3373,7 +3378,6 @@ id textStart
 id textTop
 id textView
 id text_about_zoco
-id text_category
 id text_discount
 id text_input_end_icon
 id text_input_error_icon
@@ -3538,6 +3542,7 @@ layout app_bar_main
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout card_view_article_item
+layout card_view_category_item
 layout card_view_msg_in_item
 layout card_view_msg_out_item
 layout card_view_my_article_item
@@ -3906,6 +3911,7 @@ string tab_foods
 string tab_services
 string tab_store
 string text_amount_article
+string text_amount_category
 string text_ask_aunt
 string text_category_detail
 string text_change_passwd

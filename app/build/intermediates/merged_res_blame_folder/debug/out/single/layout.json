@@ -72,8 +72,8 @@
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_notifications.xml"
     },
     {
-        "merged": "com.arlequins.zoco_1.app-mergeDebugResources-53:/layout/fragment_my_products.xml",
-        "source": "com.arlequins.zoco_1.app-main-56:/layout/fragment_my_products.xml"
+        "merged": "com.arlequins.zoco_1.app-mergeDebugResources-53:/layout/fragment_category.xml",
+        "source": "com.arlequins.zoco_1.app-main-56:/layout/fragment_category.xml"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-53:\\layout\\nav_header_main.xml",
@@ -90,6 +90,10 @@
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-53:\\layout\\fragment_articles.xml",
         "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\fragment_articles.xml"
+    },
+    {
+        "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-53:\\layout\\card_view_category_item.xml",
+        "source": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-main-56:\\layout\\card_view_category_item.xml"
     },
     {
         "merged": "C:\\Users\\migue\\.gradle\\daemon\\7.3.3\\com.arlequins.zoco_1.app-mergeDebugResources-53:\\layout\\fragment_new_category.xml",

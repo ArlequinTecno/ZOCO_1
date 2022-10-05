@@ -123,6 +123,8 @@ id add_store_button
 id all_products_recycle_view
 id amount_detail_product_text_view
 id amount_detail_text_view
+id amount_item_text_view
+id amout_text_view
 id app_bar_main
 id article_card_view
 id article_image_view
@@ -132,6 +134,7 @@ id category_autocomplete_text_view
 id category_detail_text_view
 id category_input_text_layout
 id category_picture_image_view
+id category_recycler_view
 id change_passwd_text_view
 id constraintSuper
 id contact_image_view
@@ -190,6 +193,7 @@ id name_article_request_text_view
 id name_article_text_input_layout
 id name_article_text_view
 id name_category_edit_text
+id name_category_item_text_view
 id name_category_text_input_layout
 id name_contact_text_view
 id name_detail_product_text_view
@@ -234,6 +238,7 @@ id number_article_input_text
 id number_articles_text_input_layout
 id phon_seller_text_view
 id phone_text_view
+id picture_category_item_image_view
 id picture_detail_notification_image_view
 id picture_detail_product_image_view
 id picture_detail_store_image_view
@@ -297,7 +302,6 @@ id store_input_text_layout
 id store_recycler_view
 id textView
 id text_about_zoco
-id text_category
 id text_discount
 id title_log_in_text_view
 id title_new_article_text_view
@@ -316,6 +320,7 @@ id wellcome_text_view
 layout activity_main
 layout app_bar_main
 layout card_view_article_item
+layout card_view_category_item
 layout card_view_msg_in_item
 layout card_view_msg_out_item
 layout card_view_my_article_item
@@ -436,6 +441,7 @@ string tab_foods
 string tab_services
 string tab_store
 string text_amount_article
+string text_amount_category
 string text_ask_aunt
 string text_category_detail
 string text_change_passwd
