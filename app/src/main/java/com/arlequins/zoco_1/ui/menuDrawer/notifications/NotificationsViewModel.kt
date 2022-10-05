@@ -43,3 +43,4 @@ class NotificationsViewModel : ViewModel() {
         }
     }
 }
+

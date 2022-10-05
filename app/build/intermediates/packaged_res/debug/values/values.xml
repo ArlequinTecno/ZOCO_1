@@ -31,6 +31,7 @@
     </array>
     <color name="accent">#8BC34A</color>
     <color name="black">#FF000000</color>
+    <color name="danger_color">#A5384C</color>
     <color name="divider">#BDBDBD</color>
     <color name="focusable_color">#C9A5A7A6</color>
     <color name="ic_launcher_background">#D9EAE0</color>
@@ -72,18 +73,21 @@
     <string name="button_new_store">Agregar un negocio</string>
     <string name="button_request_article">Solicitar producto</string>
     <string name="button_save">Guardar</string>
+    <string name="button_save_change">Guardar cambios</string>
     <string name="button_send">Enviar</string>
     <string name="button_signup">Registarse</string>
     <string name="chip_language_english">English</string>
     <string name="chip_language_spanish">Español</string>
     <string name="chip_mode_light">Modo claro</string>
     <string name="chip_mode_night">Modo oscuro</string>
-    <string name="chip_state_product_no_publish">No publicar</string>
-    <string name="chip_state_product_publish">Publicar</string>
+    <string name="chip_state_product_no_publish">Oculto</string>
+    <string name="chip_state_product_publish">Público</string>
     <string name="chip_state_store_hide">Ocultar</string>
     <string name="chip_state_store_visibility">Visible</string>
     <string name="default_web_client_id" translatable="false">415534912140-m8rb1korqnnlch2rkq51kbo1i51b00cg.apps.googleusercontent.com</string>
     <string name="details_article">Detalle del producto</string>
+    <string name="fab_edit">Editar</string>
+    <string name="fab_trash">Borrar</string>
     <string name="gcm_defaultSenderId" translatable="false">415534912140</string>
     <string name="google_api_key" translatable="false">AIzaSyD4n21PzXgaHBeHl4FexDWhPZViqcqaTMU</string>
     <string name="google_app_id" translatable="false">1:415534912140:android:d24d22eea886feecf121a9</string>
@@ -97,7 +101,7 @@
     <string name="hint_description_store">Descripción del negocio</string>
     <string name="hint_email">Correo electrónico Institucional</string>
     <string name="hint_last_name">Apellidos</string>
-    <string name="hint_location_store">Ubicación del negocio</string>
+    <string name="hint_location_store">Ubicación :</string>
     <string name="hint_msg">Mensaje</string>
     <string name="hint_msg_request_product">Escribir al vendedor</string>
     <string name="hint_name">Nombre</string>
@@ -122,7 +126,9 @@
     <string name="menu_search">Buscar</string>
     <string name="menu_settings">Configuraciones</string>
     <string name="menu_signOut">Cerrar sesión</string>
+    <string name="nav_detail_my_article">Detalle del producto</string>
     <string name="nav_detail_notification">Detalle de la notificación</string>
+    <string name="nav_detail_store">"Detalle de negocio "</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="nav_header_subtitle">Tu mercado favorito</string>
     <string name="nav_header_title">ZOCO</string>

@@ -1,5 +1,6 @@
 package com.arlequins.zoco_1.ui.details.detailsNotification
 
+import android.annotation.SuppressLint
 import android.os.Build
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -13,7 +14,7 @@ import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.arlequins.zoco_1.databinding.FragmentDetailNotificationBinding
 import com.arlequins.zoco_1.model.Chat
-import com.arlequins.zoco_1.ui.details.detailsNotification.adapter.ChatAdapter
+import com.arlequins.zoco_1.model.NotificationModel
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
@@ -21,9 +22,12 @@ class DetailNotificationFragment : Fragment() {
 
     private lateinit var detailsNotificationBinding: FragmentDetailNotificationBinding
     private lateinit var detailsNotificationViewModel: DetailNotificationViewModel
-    private lateinit var chatAdapter: ChatAdapter
-    private var chatList: ArrayList<Chat> = ArrayList<Chat>()
+    private lateinit var chatAdapter: DetailNotificationAdapter
+    private var chatList: ArrayList<Chat> = ArrayList()
     private val args: DetailNotificationFragmentArgs by navArgs()
+    private lateinit var notification: NotificationModel
+    private lateinit var llmanager: LinearLayoutManager
+
 
 
 
@@ -35,15 +39,37 @@ class DetailNotificationFragment : Fragment() {
         detailsNotificationBinding = FragmentDetailNotificationBinding.inflate(inflater, container, false)
         detailsNotificationViewModel = ViewModelProvider(this)[DetailNotificationViewModel::class.java]
 
-        val notification = args.notificationModel
+        notification = args.notificationModel
         with(detailsNotificationViewModel) {
             loadMsg(notification.id)
             showMsg.observe(viewLifecycleOwner){ msg->
                 showMsg(msg)
             }
+            chatListM.observe(viewLifecycleOwner){ chatList ->
+                chatAdapter.appendItems(chatList)
+
+            }
+            sentMsg.observe(viewLifecycleOwner){ chatItem ->
+                if (chatItem != null) {
+                    chatAdapter.appendItem(chatItem)
+                    llmanager.scrollToPositionWithOffset(chatList.size-1, 10)
+                }
+            }
+
         }
+        chatAdapter = DetailNotificationAdapter(
+            chatList,
+            onItemClicked = { onMsgClicked(it) }
+        )
 
         with(detailsNotificationBinding){
+            msgRecyclerView.apply {
+                llmanager =  LinearLayoutManager(this@DetailNotificationFragment.requireContext())
+                layoutManager = llmanager
+                adapter = chatAdapter
+                setHasFixedSize(false)
+            }
+
             nameDetailProductTextView.text = notification.article?.name
             priceDetailProductTextView.text = notification.article?.price
             amountDetailProductTextView.text = notification.numArticle
@@ -51,29 +77,22 @@ class DetailNotificationFragment : Fragment() {
             dateDetailProductTextView.text = notification.date
 
             sendMsgButton.setOnClickListener {
-                detailsNotificationViewModel.sendMsg(
-                    notification,
-                    msgInputText.text.toString(),
-                    getDate()
-                )
-                msgInputText.setText("")
+                with(detailsNotificationBinding) {
+                    detailsNotificationViewModel.sendMsg(
+                        notification,
+                        msgInputText.text.toString(),
+                        getDate(),
+                    )
+                    msgInputText.setText("")
 
+                }
             }
         }
-        initMsgRecyclerView()
         return detailsNotificationBinding.root
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
 
-    private fun initMsgRecyclerView() {
-        with(detailsNotificationBinding){
-            msgRecyclerView.apply {
-                layoutManager = LinearLayoutManager(this@DetailNotificationFragment.requireContext())
-                adapter = chatAdapter
-                setHasFixedSize(false)
-            }
-        }
-    }
 
 
     private fun onMsgClicked(it: Chat) {

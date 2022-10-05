@@ -34,7 +34,7 @@
     <string name="hint_description_product">Descripción del producto</string>
     <string name="hint_name_store">Nombre del negocio</string>
     <string name="hint_description_store">Descripción del negocio</string>
-    <string name="hint_location_store">Ubicación del negocio</string>
+    <string name="hint_location_store">Ubicación :</string>
     <string name="hint_category">Categorias</string>
     <string name="hint_store">Mis negocios</string>
     <string name="hint_name_category">Nombre de la categoría</string>
@@ -51,8 +51,8 @@
     <string name="chip_mode_night">Modo oscuro</string>
     <string name="chip_language_spanish">Español</string>
     <string name="chip_language_english">English</string>
-    <string name="chip_state_product_publish">Publicar</string>
-    <string name="chip_state_product_no_publish">No publicar</string>
+    <string name="chip_state_product_publish">Público</string>
+    <string name="chip_state_product_no_publish">Oculto</string>
     <string name="chip_state_store_visibility">Visible</string>
     <string name="chip_state_store_hide">Ocultar</string>
 
@@ -64,6 +64,7 @@
     <string name="button_new_article">Agregar un artículo</string>
     <string name="button_new_store">Agregar un negocio</string>
     <string name="button_request_article">Solicitar producto</string>
+    <string name="button_save_change">Guardar cambios</string>
 
     <string name="title_login_fragment">INICIAR SESIÓN</string>
     <string name="title_signup_fragment">REGISTRARSE</string>
@@ -94,6 +95,10 @@
     <string name="nav_trolley_fragment">Realizar pedido</string>
     <string name="nav_detail_notification">Detalle de la notificación</string>
     <string name="hint_msg">Mensaje</string>
+    <string name="nav_detail_my_article">Detalle del producto</string>
+    <string name="fab_edit">Editar</string>
+    <string name="fab_trash">Borrar</string>
+    <string name="nav_detail_store">"Detalle de negocio "</string>
 
 
     <string-array name="array_categories">

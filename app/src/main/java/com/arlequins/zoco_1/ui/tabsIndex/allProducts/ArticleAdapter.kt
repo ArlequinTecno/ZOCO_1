@@ -33,6 +33,10 @@ class ArticleAdapter(
         notifyDataSetChanged()
     }
 
+    fun upDate(){
+        notifyDataSetChanged()
+    }
+
     class ArticleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         private val binding = CardViewArticleItemBinding.bind(itemView)

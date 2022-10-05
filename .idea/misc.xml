@@ -24,8 +24,10 @@
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/card_view_article_item.xml" value="0.2" />
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/card_view_msg_in_item.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/card_view_msg_out_item.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/card_view_my_article_item.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/card_view_notification_item.xml" value="0.19895833333333332" />
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/card_view_product_item.xml" value="0.17447916666666666" />
+        <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/card_view_store_item.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/category_items.xml" value="0.2" />
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/content_main.xml" value="0.2" />
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/content_my_products.xml" value="0.2" />
@@ -34,7 +36,9 @@
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/fragment_all_products.xml" value="0.2" />
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/fragment_articles.xml" value="0.19635416666666666" />
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/fragment_category.xml" value="0.2" />
+        <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/fragment_detail_my_article.xml" value="0.22" />
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/fragment_detail_notification.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/fragment_detail_store.xml" value="0.1" />
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/fragment_details_article.xml" value="0.22" />
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/fragment_discount.xml" value="0.2" />
         <entry key="..\:/Users/migue/AndroidStudioProjects/ZOCO_1/app/src/main/res/layout/fragment_foods.xml" value="0.2" />

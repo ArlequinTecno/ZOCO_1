@@ -68,27 +68,5 @@
         app:layout_constraintStart_toStartOf="@+id/product_fab"
         tools:ignore="ImageContrastCheck" />
 
-    <TextView
-        android:id="@+id/leyed_new_article_text_view"
-        style="@style/h5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:text="@string/button_new_article"
-        app:layout_constraintBottom_toBottomOf="@+id/product_fab"
-        app:layout_constraintEnd_toStartOf="@+id/product_fab"
-        app:layout_constraintTop_toTopOf="@+id/product_fab" />
-
-    <TextView
-        android:id="@+id/leyed_new_store_text_view"
-        style="@style/h5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:text="@string/button_new_store"
-        app:layout_constraintBottom_toBottomOf="@+id/store_fab"
-        app:layout_constraintEnd_toStartOf="@+id/store_fab"
-        app:layout_constraintTop_toTopOf="@+id/store_fab" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

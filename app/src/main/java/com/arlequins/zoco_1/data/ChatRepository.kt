@@ -42,7 +42,7 @@ class ChatRepository {
 
     suspend fun sendMsg(
         notification: NotificationModel,
-        chatMsg: Chat): ResourceRemote<String?> {
+        chatMsg: Chat): ResourceRemote<Chat> {
         return try{
             val pathOut = auth.uid?.let { db.collection(userCollection).document(it)
                 .collection(notificationCollection).document(notification.id.toString())
@@ -56,17 +56,17 @@ class ChatRepository {
 
             if (notification.uid == auth.uid){
                 chatMsg.type ="out"
-                pathOut?.document(documentChat?.id.toString())?.set(chatMsg)?.await()
+                documentChat?.let { pathOut.document(it.id).set(chatMsg).await() }
                 chatMsg.type ="in"
-                pathIn.document(documentChat?.id.toString()).set(chatMsg).await()
+                documentChat?.let { pathIn.document(it.id).set(chatMsg).await() }
             }
             else{
                 chatMsg.type ="in"
-                pathOut?.document(documentChat?.id.toString())?.set(chatMsg)?.await()
+                documentChat?.let { pathOut.document(it.id).set(chatMsg).await() }
                 chatMsg.type ="out"
-                pathIn.document(documentChat?.id.toString()).set(chatMsg).await()
+                documentChat?.let { pathIn.document(it.id).set(chatMsg).await() }
             }
-            ResourceRemote.Success(data = chatMsg.id)
+            ResourceRemote.Success(data = chatMsg)
         }catch(e: FirebaseFirestoreException){
             e.localizedMessage?.let { Log.e("sendMsg", it) }
             ResourceRemote.Error(message = e.localizedMessage)

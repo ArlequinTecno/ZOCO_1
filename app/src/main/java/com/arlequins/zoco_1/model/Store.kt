@@ -1,5 +1,7 @@
 package com.arlequins.zoco_1.model
 
+import java.io.Serializable
+
 data class Store(
     var id : String? = null,
     var uid : String? = null,
@@ -8,4 +10,4 @@ data class Store(
     var description : String? = null,
     var location : String? = null,
     var state : String? = null
-)
+): Serializable

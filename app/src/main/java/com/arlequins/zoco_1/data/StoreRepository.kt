@@ -65,4 +65,46 @@ class StoreRepository {
             ResourceRemote.Error(message = e.localizedMessage)
         }
     }
+
+    suspend fun editMyStore(store: Store): ResourceRemote<String> {
+        return try {
+            auth.uid?.let {
+                store.id?.let { sid ->
+                    db.collection(userCollection)
+                        .document(it).collection(storeCollection)
+                        .document(sid).set(store).await() }
+            }
+            store.id?.let {sid ->db.collection(storeCollection)
+                .document(sid).set(store).await() }
+            ResourceRemote.Success(data = store.id)
+        }catch(e: FirebaseFirestoreException){
+            e.localizedMessage?.let { Log.e("EditStore", it) }
+            ResourceRemote.Error(message = e.localizedMessage)
+        }
+        catch (e: FirebaseNetworkException){
+            e.localizedMessage?.let { Log.e("NetwordEditStore", it) }
+            ResourceRemote.Error(message = e.localizedMessage)
+        }
+
+    }
+
+    suspend fun deleteStore(storeID: String?): ResourceRemote<Boolean> {
+        return try {
+            auth.uid?.let {
+                storeID?.let { it1 ->
+                    db.collection(userCollection).document(it)
+                        .collection(storeCollection).document(it1).delete().await()
+                }
+            }
+            storeID?.let { db.collection(storeCollection).document(it).delete().await() }
+            ResourceRemote.Success(data = true)
+        }catch(e: FirebaseFirestoreException){
+            e.localizedMessage?.let { Log.e("DeleteStore", it) }
+            ResourceRemote.Error(message = e.localizedMessage)
+        }
+        catch (e: FirebaseNetworkException){
+            e.localizedMessage?.let { Log.e("NetwordDeleteStore", it) }
+            ResourceRemote.Error(message = e.localizedMessage)
+        }
+    }
 }

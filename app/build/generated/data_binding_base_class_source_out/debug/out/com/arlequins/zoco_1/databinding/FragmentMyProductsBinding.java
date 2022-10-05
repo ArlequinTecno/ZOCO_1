@@ -4,7 +4,6 @@ package com.arlequins.zoco_1.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -26,12 +25,6 @@ public final class FragmentMyProductsBinding implements ViewBinding {
   public final FloatingActionButton addFab;
 
   @NonNull
-  public final TextView leyedNewArticleTextView;
-
-  @NonNull
-  public final TextView leyedNewStoreTextView;
-
-  @NonNull
   public final ViewPager2 myProductsPager;
 
   @NonNull
@@ -44,14 +37,11 @@ public final class FragmentMyProductsBinding implements ViewBinding {
   public final FloatingActionButton storeFab;
 
   private FragmentMyProductsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton addFab, @NonNull TextView leyedNewArticleTextView,
-      @NonNull TextView leyedNewStoreTextView, @NonNull ViewPager2 myProductsPager,
+      @NonNull FloatingActionButton addFab, @NonNull ViewPager2 myProductsPager,
       @NonNull TabLayout myProductsTabs, @NonNull FloatingActionButton productFab,
       @NonNull FloatingActionButton storeFab) {
     this.rootView = rootView;
     this.addFab = addFab;
-    this.leyedNewArticleTextView = leyedNewArticleTextView;
-    this.leyedNewStoreTextView = leyedNewStoreTextView;
     this.myProductsPager = myProductsPager;
     this.myProductsTabs = myProductsTabs;
     this.productFab = productFab;
@@ -91,18 +81,6 @@ public final class FragmentMyProductsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.leyed_new_article_text_view;
-      TextView leyedNewArticleTextView = ViewBindings.findChildViewById(rootView, id);
-      if (leyedNewArticleTextView == null) {
-        break missingId;
-      }
-
-      id = R.id.leyed_new_store_text_view;
-      TextView leyedNewStoreTextView = ViewBindings.findChildViewById(rootView, id);
-      if (leyedNewStoreTextView == null) {
-        break missingId;
-      }
-
       id = R.id.myProducts_pager;
       ViewPager2 myProductsPager = ViewBindings.findChildViewById(rootView, id);
       if (myProductsPager == null) {
@@ -127,9 +105,8 @@ public final class FragmentMyProductsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentMyProductsBinding((ConstraintLayout) rootView, addFab,
-          leyedNewArticleTextView, leyedNewStoreTextView, myProductsPager, myProductsTabs,
-          productFab, storeFab);
+      return new FragmentMyProductsBinding((ConstraintLayout) rootView, addFab, myProductsPager,
+          myProductsTabs, productFab, storeFab);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -17,11 +17,7 @@ class ChatAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MsgViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         var layoutId by Delegates.notNull<Int>()
-        layoutId = if ( chatList[positionType].type == "out"){
-            R.layout.card_view_msg_out_item
-        } else{
-            R.layout.card_view_msg_in_item
-        }
+        layoutId = R.layout.card_view_msg_out_item
         return MsgViewHolder(layoutInflater.inflate(layoutId, parent, false))
     }
 
@@ -33,6 +29,10 @@ class ChatAdapter(
 
     override fun getItemCount(): Int = chatList.size
 
-
+    fun appendItems(newList: ArrayList<Chat>){
+        chatList.clear()
+        chatList.addAll(newList)
+        notifyDataSetChanged()
+    }
 }
 

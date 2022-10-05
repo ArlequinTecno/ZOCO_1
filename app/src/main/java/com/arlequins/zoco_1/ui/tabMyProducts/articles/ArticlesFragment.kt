@@ -6,14 +6,21 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.arlequins.zoco_1.databinding.FragmentArticlesBinding
+import com.arlequins.zoco_1.interfaces.OnFragmentActionListener
+import com.arlequins.zoco_1.model.Article
+import com.arlequins.zoco_1.ui.tabMyProducts.articles.myProductsAdapter.MyArticleAdapter
 
 
 class ArticlesFragment : Fragment(){
-
-    private var _binding: FragmentArticlesBinding? = null
-    private val binding get() = _binding!!
+    private var listenerInterface : OnFragmentActionListener? = null
+    private lateinit var articleBinding: FragmentArticlesBinding
+    private lateinit var articlesViewModel: ArticlesViewModel
+    private lateinit var myArticleAdapter: MyArticleAdapter
+    private lateinit var llmanager: LinearLayoutManager
+    private val myArticleList: ArrayList<Article> = ArrayList()
 
 
     override fun onCreateView(
@@ -21,22 +28,55 @@ class ArticlesFragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val articlesViewModel =
-            ViewModelProvider(this)[ArticlesViewModel::class.java]
+        articleBinding = FragmentArticlesBinding.inflate(inflater, container, false)
+        articlesViewModel = ViewModelProvider(this)[ArticlesViewModel::class.java]
+        llmanager = LinearLayoutManager(this@ArticlesFragment.requireContext())
 
-        _binding = FragmentArticlesBinding.inflate(inflater, container, false)
+        with(articlesViewModel){
+            loadMyArticles()
 
-        val textView: TextView = binding.textArticles
-        articlesViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+            showMsg.observe(viewLifecycleOwner){ msg ->
+                showMsg(msg)
+            }
+            myArticlesList.observe(viewLifecycleOwner){ articleListLoad ->
+                myArticleAdapter.appendItems(articleListLoad)
+            }
         }
 
-        return binding.root
+        myArticleAdapter = MyArticleAdapter(
+            myArticleList,
+            onItemClicked = {onArticleClicked(it)}
+        )
+        with(articleBinding){
+            myArticlesRecyclerView.apply{
+                layoutManager = llmanager
+                adapter = myArticleAdapter
+                setHasFixedSize(false)
+            }
+        }
+
+        return articleBinding.root
     }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+
+    private fun onArticleClicked(it: Article) {
+        listenerInterface?.onClickedMyArticle(it)
     }
+
+    private fun showMsg(msg: String?) {
+        Toast.makeText(requireActivity(), msg, Toast.LENGTH_LONG).show()
+    }
+    override fun onAttach(context: android.content.Context) {
+        super.onAttach(context)
+        if (context is OnFragmentActionListener){
+            listenerInterface = context
+        }
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        listenerInterface = null
+    }
+
 }
 
 

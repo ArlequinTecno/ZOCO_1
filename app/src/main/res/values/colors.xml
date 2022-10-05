@@ -26,6 +26,7 @@
     <color name="icons">#E6E4E8E4</color>
     <color name="divider">#BDBDBD</color>
     <color name="warning_color">#DDEC7821</color>
+    <color name="danger_color">#A5384C</color>
     <color name="focusable_color">#C9A5A7A6</color>
     <color name="transparency">#00FFFFFF</color>
 

@@ -6,36 +6,72 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.navigation.fragment.findNavController
+import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.arlequins.zoco_1.databinding.FragmentStoreBinding
+import com.arlequins.zoco_1.interfaces.OnFragmentActionListener
+import com.arlequins.zoco_1.model.Store
+import com.arlequins.zoco_1.ui.tabMyProducts.store.sotreAdapter.StoreAdapter
 
 class StoreFragment : Fragment() {
-
-    private var _binding: FragmentStoreBinding? = null
-    private val binding get() = _binding!!
+    private var listenerInterface : OnFragmentActionListener? = null
+    private lateinit var storeBinding: FragmentStoreBinding
+    private lateinit var storeViewModel: StoreViewModel
+    private lateinit var storeAdapter: StoreAdapter
+    private val storeList: ArrayList<Store> = ArrayList()
+    private lateinit var llmanager: LinearLayoutManager
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val storeViewModel =
-            ViewModelProvider(this)[StoreViewModel::class.java]
+        storeBinding = FragmentStoreBinding.inflate(inflater, container, false)
+        storeViewModel = ViewModelProvider(this)[StoreViewModel::class.java]
+        llmanager = LinearLayoutManager(this@StoreFragment.requireContext())
 
-        _binding = FragmentStoreBinding.inflate(inflater, container, false)
+        with(storeViewModel){
+            loadStore()
 
-        val textView: TextView = binding.textStore
-        storeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+            showMsg.observe(viewLifecycleOwner){ msg ->
+                showMsg(msg)
+            }
+            storeListL.observe(viewLifecycleOwner){ storeListLoad ->
+                storeAdapter.appendItems(storeListLoad)
+            }
         }
-        return binding.root
+        storeAdapter = StoreAdapter(
+            storeList,
+            onItemClicked = {onStoreClicked(it)}
+        )
+        with(storeBinding){
+            storeRecyclerView.apply {
+                layoutManager = llmanager
+                adapter = storeAdapter
+                setHasFixedSize(false)
+            }
+        }
+
+        return storeBinding.root
     }
-    private fun goToStore(){
-        //TODO
+
+    private fun onStoreClicked(it: Store) {
+        listenerInterface?.onClickedStore(it)
     }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+
+    override fun onAttach(context: android.content.Context) {
+        super.onAttach(context)
+        if (context is OnFragmentActionListener){
+            listenerInterface = context
+        }
     }
+
+    override fun onDetach() {
+        super.onDetach()
+        listenerInterface = null
+    }
+    private fun showMsg(msg: String?) {
+        Toast.makeText(requireActivity(), msg, Toast.LENGTH_LONG).show()
+    }
+
 }

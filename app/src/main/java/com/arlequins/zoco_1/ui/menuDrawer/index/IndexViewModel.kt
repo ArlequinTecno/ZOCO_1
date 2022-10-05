@@ -42,9 +42,9 @@ class IndexViewModel : ViewModel() {
                     is ResourceRemote.Success ->{
                         result.data?.documents!!.forEach { doc ->
                             val article = doc.toObject<Article>()
-                            if (article !in articleList) {
-                                article?.let { articleList.add(article) }
-                                when (article?.category) {
+                            if (article !in articleList && article!!.state != "Oculto") {
+                                article.let { articleList.add(article) }
+                                when (article.category) {
                                     "Académicos" -> article.let { articleAcademicList.add(article) }
                                     "Alimentos" -> article.let { articleFoodList.add(article) }
                                     "Servicios" -> article.let { articleServiceList.add(article) }

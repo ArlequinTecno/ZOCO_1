@@ -19,7 +19,10 @@ import com.arlequins.zoco_1.R
 import com.arlequins.zoco_1.databinding.ActivityMainBinding
 import com.arlequins.zoco_1.interfaces.OnFragmentActionListener
 import com.arlequins.zoco_1.model.Article
+import com.arlequins.zoco_1.model.Store
 import com.arlequins.zoco_1.ui.menuDrawer.index.IndexFragmentDirections
+import com.arlequins.zoco_1.ui.menuDrawer.index.IndexFragmentDirections.Companion.actionNavIndexToNavDetailsArticleFragment
+import com.arlequins.zoco_1.ui.menuDrawer.myProducts.MyProductsFragmentDirections
 import com.arlequins.zoco_1.ui.trolley.TrolleyFragmentDirections
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
@@ -171,5 +174,13 @@ class MainActivity :
 
     override fun navTrolleyToIndex() {
         navController.navigate(TrolleyFragmentDirections.actionNavTrolleyFragmentToNavIndex())
+    }
+
+    override fun onClickedMyArticle(it: Article) {
+        navController.navigate(MyProductsFragmentDirections.actionNavMyProductsToNavDetailMyArticleFragment(it))
+    }
+
+    override fun onClickedStore(it: Store) {
+        navController.navigate(MyProductsFragmentDirections.actionNavMyProductsToNavDetailStoreFragment(it))
     }
 }

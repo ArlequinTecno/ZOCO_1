@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import androidx.activity.addCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -69,8 +68,6 @@ class MyProductsFragment : Fragment() {
         with(myProductsBinding){
             productFab.visibility = View.GONE
             storeFab.visibility = View.GONE
-            leyedNewArticleTextView.visibility = View.GONE
-            leyedNewStoreTextView.visibility = View.GONE
             addFab.setOnClickListener {
                 onAddFabClicked()
             }
@@ -105,14 +102,10 @@ class MyProductsFragment : Fragment() {
             if(!clicked){
                 productFab.visibility = View.VISIBLE
                 storeFab.visibility = View.VISIBLE
-                leyedNewArticleTextView.visibility = View.VISIBLE
-                leyedNewStoreTextView.visibility = View.VISIBLE
             }
             else{
                 storeFab.visibility = View.GONE
                 productFab.visibility = View.GONE
-                leyedNewArticleTextView.visibility = View.GONE
-                leyedNewStoreTextView.visibility = View.GONE
             }
         }
     }
@@ -121,15 +114,11 @@ class MyProductsFragment : Fragment() {
             if(!clicked) {
                 productFab.startAnimation(fromBottom)
                 storeFab.startAnimation(fromBottom)
-                leyedNewStoreTextView.startAnimation(fromText)
-                leyedNewArticleTextView.startAnimation(fromText)
                 addFab.startAnimation(rotateOpen)
             }
             else{
                 productFab.startAnimation(toBottom)
                 storeFab.startAnimation(toBottom)
-                leyedNewArticleTextView.startAnimation(toText)
-                leyedNewStoreTextView.startAnimation(toText)
                 addFab.startAnimation(rotateClose)
             }
         }

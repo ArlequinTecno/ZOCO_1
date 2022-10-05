@@ -68,6 +68,5 @@ class AllProductsFragment : Fragment() {
         super.onDetach()
         listenerInterface = null
     }
-
 }
 

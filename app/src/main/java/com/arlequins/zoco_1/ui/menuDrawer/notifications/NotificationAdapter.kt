@@ -28,6 +28,7 @@ class NotificationAdapter(
 
     override fun getItemCount(): Int = notificationList.size
 
+
     fun appendItems(newList: ArrayList<NotificationModel>){
         notificationList.clear()
         notificationList.addAll(newList)

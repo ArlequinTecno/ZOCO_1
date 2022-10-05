@@ -18,10 +18,10 @@ class DetailNotificationViewModel : ViewModel() {
     private val _showMsg: MutableLiveData<String?> = MutableLiveData()
     val showMsg: LiveData<String?> = _showMsg
 
-    private val _chatList: MutableLiveData<ArrayList<Chat>> = MutableLiveData()
-    val chatList: LiveData<ArrayList<Chat>> = _chatList
-    private val _sentMsg: MutableLiveData<Boolean?> = MutableLiveData()
-    val sentMsg: LiveData<Boolean?> = _sentMsg
+    private val _chatListM: MutableLiveData<ArrayList<Chat>> = MutableLiveData()
+    val chatListM: LiveData<ArrayList<Chat>> = _chatListM
+    private val _sentMsg: MutableLiveData<Chat?> = MutableLiveData()
+    val sentMsg: LiveData<Chat?> = _sentMsg
     private val _sendMsg: MutableLiveData<Chat?> = MutableLiveData()
     val sendMsg: LiveData<Chat?> = _sendMsg
 
@@ -36,10 +36,8 @@ class DetailNotificationViewModel : ViewModel() {
                             if (msg !in msgList){
                                 msg?.let { msgList.add(it) }
                             }
-
-
                         }
-                        _chatList.postValue(msgList)
+                        _chatListM.postValue(msgList)
                     }
                     is ResourceRemote.Error -> {
                         _showMsg.postValue(result.message)
@@ -55,21 +53,21 @@ class DetailNotificationViewModel : ViewModel() {
     fun sendMsg(notification: NotificationModel, msg: String, date: String) {
         viewModelScope.launch{
             if (msg.isEmpty()){
-                _sentMsg.postValue(false)
+                _showMsg.postValue("Escribe algo")
             }
             else{
-                val chatMsg = Chat(
+                val chat = Chat(
                     msg = msg,
                     date = date
                 )
-                val result = chatRepository.sendMsg(notification, chatMsg)
+                val result = chatRepository.sendMsg(notification, chat)
                 result.let { resourceRemote ->
                     when(resourceRemote){
                         is ResourceRemote.Success -> {
-                            _sentMsg.postValue(true)
+                            _sentMsg.postValue(result.data)
                         }
                         is ResourceRemote.Error ->{
-                            _sentMsg.postValue(false)
+                            _showMsg.postValue("Error al enviar mensaje")
                         }
                         is ResourceRemote.Loading -> TODO()
                     }

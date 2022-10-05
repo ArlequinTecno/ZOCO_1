@@ -69,5 +69,48 @@ class ArticleRepository {
         }
     }
 
+    suspend fun editMyArticle(article: Article): ResourceRemote<String> {
+        return try {
+            auth.uid?.let {
+                article.id?.let { aid ->
+                    db.collection(userCollection)
+                        .document(it).collection(articleCollection)
+                        .document(aid).set(article).await()
+                }
+            }
+            article.id?.let {aid -> db.collection(articleCollection)
+                .document(aid).set(article).await()
+            }
+            ResourceRemote.Success(data = article.id)
+        }catch(e: FirebaseFirestoreException){
+            e.localizedMessage?.let { Log.e("EditArticles", it) }
+            ResourceRemote.Error(message = e.localizedMessage)
+        }
+        catch (e: FirebaseNetworkException){
+            e.localizedMessage?.let { Log.e("NetwordEditArticles", it) }
+            ResourceRemote.Error(message = e.localizedMessage)
+        }
+    }
+
+    suspend fun deleteArticle(articleID: String?): ResourceRemote<Boolean> {
+        return try {
+            articleID?.let {
+                auth.uid?.let { it1 ->
+                    db.collection(userCollection)
+                        .document(it1).collection(articleCollection)
+                        .document(it).delete().await()
+                }
+            }
+            articleID?.let { db.collection(articleCollection).document(it).delete().await() }
+            ResourceRemote.Success(true)
+        }catch(e: FirebaseFirestoreException){
+            e.localizedMessage?.let { Log.e("DeleteArticles", it) }
+            ResourceRemote.Error(message = e.localizedMessage)
+        }
+        catch (e: FirebaseNetworkException){
+            e.localizedMessage?.let { Log.e("NetwordDeleteArticles", it) }
+            ResourceRemote.Error(message = e.localizedMessage)
+        }
+    }
 }
 

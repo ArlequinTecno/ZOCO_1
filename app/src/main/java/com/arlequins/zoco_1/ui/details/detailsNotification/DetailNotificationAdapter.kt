@@ -1,5 +1,6 @@
 package com.arlequins.zoco_1.ui.details.detailsNotification
 
+import android.annotation.SuppressLint
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -12,8 +13,8 @@ import com.arlequins.zoco_1.model.Chat
 import kotlin.properties.Delegates
 
 class DetailNotificationAdapter(
-    private val detailsNotificationList: MutableList<Chat?>,
-    private val onItemClicked: (Chat) -> Unit
+    private val detailsNotificationList: ArrayList<Chat>,
+    private val onItemClicked: (Chat) -> Unit,
     ): RecyclerView.Adapter<DetailNotificationAdapter.DetailNotificationViewHolder>() {
 
 
@@ -21,27 +22,29 @@ class DetailNotificationAdapter(
 
     override fun onBindViewHolder(holder: DetailNotificationViewHolder, position: Int) {
         val msg = detailsNotificationList[position]
-        msg?.let { holder.bind(it) }
-        holder.itemView.setOnClickListener { detailsNotificationList[position]?.let { it1 ->
-            onItemClicked(it1)
-        } }
+        msg.let { holder.bind(it) }
+        holder.itemView.setOnClickListener { onItemClicked(detailsNotificationList[position]) }
     }
 
     override fun getItemCount(): Int = detailsNotificationList.size
 
+    @SuppressLint("NotifyDataSetChanged")
     fun appendItems(newList: ArrayList<Chat>) {
         detailsNotificationList.clear()
         detailsNotificationList.addAll(newList)
-        notifyDataSetChanged()
+        notifyItemInserted(detailsNotificationList.size -1)
     }
     fun appendItem(newItem: Chat){
         detailsNotificationList.add(newItem)
+        notifyItemInserted(detailsNotificationList.size -1)
     }
+
+
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
     ): DetailNotificationViewHolder {
-        val msgType = detailsNotificationList[positionType]?.type
+        val msgType = detailsNotificationList[positionType].type
         Log.i("adapter", msgType.toString())
         var layoutId by Delegates.notNull<Int>()
 
@@ -69,6 +72,8 @@ class DetailNotificationAdapter(
                 inBinding.dateMsgInTextView.text = chat.date
             }
         }
+
     }
+
 
 }
